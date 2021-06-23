@@ -201,9 +201,9 @@ namespace ProcesoCita
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(237, 143);
+            this.button2.Location = new System.Drawing.Point(367, 135);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 24);
+            this.button2.Size = new System.Drawing.Size(134, 33);
             this.button2.TabIndex = 14;
             this.button2.Text = "Verificar datos";
             this.button2.UseVisualStyleBackColor = true;
@@ -211,7 +211,7 @@ namespace ProcesoCita
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(367, 444);
+            this.button3.Location = new System.Drawing.Point(367, 430);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(134, 33);
             this.button3.TabIndex = 15;
