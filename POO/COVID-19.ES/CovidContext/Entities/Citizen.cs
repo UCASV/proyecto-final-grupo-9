@@ -31,5 +31,16 @@ namespace COVID_19.ES.CovidContext
         public virtual ICollection<Dose2> Dose2s { get; set; }
         public virtual ICollection<Institution> Institutions { get; set; }
         public virtual ICollection<PriorityGroup> PriorityGroups { get; set; }
+        
+        //funcion agregada
+        
+        public Citizen(int Dui, string Name, string Direction, string Phone, string Mail)
+        {
+            this.Dui = Dui;
+            this.Name = Name;
+            this.Direction = Direction;
+            this.Phone = Phone;
+            this.Mail = Mail;
+        }
     }
 }

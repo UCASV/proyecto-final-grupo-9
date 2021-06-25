@@ -20,7 +20,8 @@ namespace COVID_19.ES.CovidContext
         public string Name { get; set; }
 
         public virtual ICollection<RegistrationStart> RegistrationStarts { get; set; }
-//extra agregado por brian
+
+        //funcion extra 
         public Manager(int Id, string Password, string InstitutionalMail, string HomeDirection, string EmployeeType, string Name)
         {
             this.Id = Id;

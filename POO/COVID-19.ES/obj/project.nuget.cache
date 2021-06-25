@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XgEnHgYw5rC3+P5TVHBQTk49wn9MQYHaa1XbzPgiYc2Gz8Zc3y0JYldOVhb19WqSUqz81W4nGsyw/Q4MMd8elQ==",
+  "dgSpecHash": "IhJFYEcnaCJx8cNscX5iBDRlW4dQe0IvBxleP3NFeXs2xOZDi9CDqkDgizCPityKgxas1wuvQ1IMVxqAXtedSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DARWIN\\Desktop\\PROGRAMACION\\1.POO\\1.Poo-BD\\COVID-19.ES\\COVID-19.ES.csproj",
+  "projectFilePath": "C:\\Users\\DARWIN\\Desktop\\PROGRAMACION\\1.POO\\1.Proyecto-Entrega\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DARWIN\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DARWIN\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

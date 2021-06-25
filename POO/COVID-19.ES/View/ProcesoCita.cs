@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace COVID_19.ES
 {
@@ -7,6 +8,11 @@ namespace COVID_19.ES
         public ProcesoCita()
         {
             InitializeComponent();
+        }
+
+        private void bttn_ApointProcess_Click(object sender, EventArgs e)
+        {
+            //TODO: INGRESAR DATOS DE TextBoxes A BD
         }
     }
 }
