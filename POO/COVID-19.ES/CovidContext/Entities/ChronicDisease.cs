@@ -12,5 +12,12 @@ namespace COVID_19.ES.CovidContext
         public int DuiCitizen { get; set; }
 
         public virtual Citizen DuiCitizenNavigation { get; set; }
+
+        //extra
+        public ChronicDisease(string Name, int DuiCitizen)
+        {
+            this.Name = Name;
+            this.DuiCitizen = DuiCitizen;
+        }
     }
 }

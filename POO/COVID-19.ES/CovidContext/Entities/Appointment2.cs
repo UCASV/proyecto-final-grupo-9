@@ -21,7 +21,7 @@ namespace COVID_19.ES.CovidContext
         public virtual Citizen DuiCitizenNavigation { get; set; }
         public virtual ICollection<Cabinxappointment2> Cabinxappointment2s { get; set; }
         public virtual ICollection<WaitRow2> WaitRow2s { get; set; }
-        
+        //extra
         public Appointment2( DateTime DateTime, string Place, int DuiCitizen)
         {
             this.DateTime = DateTime;

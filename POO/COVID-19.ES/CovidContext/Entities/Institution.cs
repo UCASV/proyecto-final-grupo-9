@@ -12,5 +12,13 @@ namespace COVID_19.ES.CovidContext
         public int DuiCitizen { get; set; }
 
         public virtual Citizen DuiCitizenNavigation { get; set; }
+        
+        //fun extra
+        public Institution(int Id,string Name, int DuiCitizen)
+        {
+            this.Id = Id;
+            this.Name = Name;
+            this.DuiCitizen = DuiCitizen;
+        }
     }
 }

@@ -407,7 +407,7 @@ namespace COVID_19.ES.CovidContext
 
                 entity.Property(e => e.IdCabin).HasColumnName("id_cabin");
 
-                entity.Property(e => e.DateTime)
+                entity.Property(e => e.DateHour)
                     .HasColumnType("datetime")
                     .HasColumnName("date_time");
 
@@ -442,7 +442,7 @@ namespace COVID_19.ES.CovidContext
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.DateTime)
+                entity.Property(e => e.DateHour)
                     .HasColumnType("datetime")
                     .HasColumnName("date_time");
 
@@ -461,7 +461,7 @@ namespace COVID_19.ES.CovidContext
 
                 entity.Property(e => e.Id).HasColumnName("id");
 
-                entity.Property(e => e.DateTime)
+                entity.Property(e => e.DateHour)
                     .HasColumnType("datetime")
                     .HasColumnName("date_time");
 

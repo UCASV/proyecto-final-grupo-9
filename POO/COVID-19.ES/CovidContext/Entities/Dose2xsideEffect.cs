@@ -13,5 +13,13 @@ namespace COVID_19.ES.CovidContext
 
         public virtual Dose2 IdDose2Navigation { get; set; }
         public virtual SideEffect IdSideEffectNavigation { get; set; }
+        
+        //extra
+        public Dose2xsideEffect(int IdSideEffect, int IdDose2, string Time)
+        {
+            this.IdSideEffect = IdSideEffect;
+            this.IdDose2 = IdDose2;
+            this.Time = Time;
+        }
     }
 }

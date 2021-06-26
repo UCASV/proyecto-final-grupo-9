@@ -18,5 +18,12 @@ namespace COVID_19.ES.CovidContext
 
         public virtual Citizen DuiCitizenNavigation { get; set; }
         public virtual ICollection<Dose2xsideEffect> Dose2xsideEffects { get; set; }
+        
+        ///fun extra
+        public Dose2(DateTime DateTime, int DuiCitizen)
+        {
+            this.DateTime = DateTime;
+            this.DuiCitizen = DuiCitizen;
+        }
     }
 }

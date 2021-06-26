@@ -12,5 +12,10 @@ namespace COVID_19.ES.CovidContext
 
         public virtual Appointment2 IdAppointment2Navigation { get; set; }
         public virtual Cabin IdCabinNavigation { get; set; }
+        public Cabinxappointment2(int IdCabin, int IdAppointment2)
+        {
+            this.IdCabin = IdCabin;
+            this.IdAppointment2 = IdAppointment2;
+        }
     }
 }
