@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 using COVID_19.ES.CovidContext;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,13 @@ namespace COVID_19.ES
 
         private void button1_Click(object sender, EventArgs e)
         {
+           /* var db = new Vaccination_ManagementContext();
+            List<Manager> managerlist = db.Managers.ToList();
+            Manager one = new Manager(Int32.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox2.Text);
+            db.Add(one);
+            db.SaveChanges();*/
+            
+            
             int number = 0;
             int.TryParse(textBox1.Text, out number);
             
