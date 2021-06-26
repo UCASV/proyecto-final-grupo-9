@@ -34,5 +34,31 @@ db.SaveChanges();
         {
             
         }
+
+        private void bttnIngresar_Click(object sender, EventArgs e)
+        {
+            var db = new Vaccination_ManagementContext();
+            var List = db.Managers
+                .OrderBy(c => c.Id)
+                .ToList();
+            var resultado = List.Where(
+                u => u.Name.Equals(txtbxUser.Text) &&
+                     u.Password.Equals(txtbxPassword.Text)).ToList();
+
+            if(resultado.Count == 0)
+            {
+                MessageBox.Show("El usuario no existe", "Inicio",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                MessageBox.Show("Bienvenido", "Inicio",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                MainMenu menu = new MainMenu();
+                menu.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }
