@@ -180,38 +180,52 @@ namespace COVID_19.ES
             
             
             //RegistrationStart 
-            /*if (false)
+            if (false)
             {
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
                 List<RegistrationStart> cabinlist = db.RegistrationStarts.ToList();
-                RegistrationStart one = new RegistrationStart(1,2, varDateTime );
+                var one = new RegistrationStart()
+                {
+                    IdCabin = 1,
+                    IdManager = 1,
+                    DateTime = varDateTime
+                };
+                //WaitRow1 one = new WaitRow1( varDateTime,1);
                 db.Add(one);
                 db.SaveChanges();
-            }*/
+            }
             
             //WaitRow1
-            if (true)
+            if (false)
             {
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
                 List<WaitRow1> cabinlist = db.WaitRow1s.ToList();
-                WaitRow1 one = new WaitRow1(varDateTime, 1);
+                var one = new WaitRow1()
+                {
+                    DateTime = varDateTime,
+                    DuiAppointment1 = 1
+                };
+                //WaitRow1 one = new WaitRow1( varDateTime,1);
                 db.Add(one);
                 db.SaveChanges();
             }
             
             //WaitRow2
-            /*if (false)
+            if (false)
             {
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
-                List<WaitRow1> cabinlist = db.WaitRow1s.ToList();
-                WaitRow1 one = new WaitRow1(varDateTime, 1 );
+                List<WaitRow2> cabinlist = db.WaitRow2s.ToList();
+                var one = new WaitRow2()
+                {
+                    DateTime = varDateTime,
+                    DuiAppointment2 = 1
+                };
                 db.Add(one);
                 db.SaveChanges();
-            }*/
-            
+            }
         }
     }
 }
