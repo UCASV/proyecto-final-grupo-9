@@ -18,5 +18,11 @@ namespace COVID_19.ES.CovidContext
 
         public virtual ICollection<Dose1xsideEffect> Dose1xsideEffects { get; set; }
         public virtual ICollection<Dose2xsideEffect> Dose2xsideEffects { get; set; }
+
+        //funcion extra
+        public SideEffect(string Name)
+        {
+            this.Name = Name;
+        }
     }
 }

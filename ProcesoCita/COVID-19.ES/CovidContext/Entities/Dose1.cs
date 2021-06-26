@@ -13,10 +13,19 @@ namespace COVID_19.ES.CovidContext
         }
 
         public int Id { get; set; }
-        public DateTime? DateTime { get; set; }
+        public DateTime DateTime { get; set; }
         public int DuiCitizen { get; set; }
 
         public virtual Citizen DuiCitizenNavigation { get; set; }
         public virtual ICollection<Dose1xsideEffect> Dose1xsideEffects { get; set; }
+        
+        //constructor
+        public Dose1(int id, DateTime dateTime, int duiCitizen)
+        {
+            this.Id = id;
+            this.DateTime = dateTime;
+            this.DuiCitizen = duiCitizen;
+        }
     }
+   
 }

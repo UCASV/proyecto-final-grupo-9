@@ -46,16 +46,19 @@ namespace COVID_19.ES
             this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.datePickerSystem = new System.Windows.Forms.DateTimePicker();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label3.Location = new System.Drawing.Point(12, 9);
+            this.label3.Location = new System.Drawing.Point(25, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(369, 29);
+            this.label3.Size = new System.Drawing.Size(362, 29);
             this.label3.TabIndex = 3;
             this.label3.Text = "SEGUIMIENTO DE CITAS DE VACUNAS COVID-19";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,7 +67,7 @@ namespace COVID_19.ES
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(12, 77);
+            this.label1.Location = new System.Drawing.Point(12, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 21);
             this.label1.TabIndex = 0;
@@ -73,15 +76,15 @@ namespace COVID_19.ES
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(12, 101);
+            this.textBox1.Location = new System.Drawing.Point(5, 105);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(182, 20);
+            this.textBox1.Size = new System.Drawing.Size(175, 20);
             this.textBox1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label2.Location = new System.Drawing.Point(12, 120);
+            this.label2.Location = new System.Drawing.Point(5, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 42);
             this.label2.TabIndex = 2;
@@ -90,7 +93,7 @@ namespace COVID_19.ES
             // check_No
             // 
             this.check_No.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.check_No.Location = new System.Drawing.Point(12, 191);
+            this.check_No.Location = new System.Drawing.Point(12, 243);
             this.check_No.Name = "check_No";
             this.check_No.Size = new System.Drawing.Size(91, 26);
             this.check_No.TabIndex = 5;
@@ -101,7 +104,7 @@ namespace COVID_19.ES
             // check_yes
             // 
             this.check_yes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.check_yes.Location = new System.Drawing.Point(12, 165);
+            this.check_yes.Location = new System.Drawing.Point(12, 217);
             this.check_yes.Name = "check_yes";
             this.check_yes.Size = new System.Drawing.Size(91, 20);
             this.check_yes.TabIndex = 4;
@@ -114,17 +117,18 @@ namespace COVID_19.ES
             this.bttn_Verifydata.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bttn_Verifydata.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (224)))), ((int) (((byte) (224)))), ((int) (((byte) (224)))));
             this.bttn_Verifydata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bttn_Verifydata.Location = new System.Drawing.Point(254, 95);
+            this.bttn_Verifydata.Location = new System.Drawing.Point(237, 74);
             this.bttn_Verifydata.Name = "bttn_Verifydata";
             this.bttn_Verifydata.Size = new System.Drawing.Size(150, 31);
             this.bttn_Verifydata.TabIndex = 7;
             this.bttn_Verifydata.Text = "Verificar datos";
             this.bttn_Verifydata.UseVisualStyleBackColor = false;
+            this.bttn_Verifydata.Click += new System.EventHandler(this.bttn_Verifydata_Click);
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label4.Location = new System.Drawing.Point(12, 238);
+            this.label4.Location = new System.Drawing.Point(5, 307);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(182, 42);
             this.label4.TabIndex = 8;
@@ -133,7 +137,7 @@ namespace COVID_19.ES
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 283);
+            this.dateTimePicker1.Location = new System.Drawing.Point(5, 352);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(218, 20);
             this.dateTimePicker1.TabIndex = 9;
@@ -142,7 +146,7 @@ namespace COVID_19.ES
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label5.Location = new System.Drawing.Point(12, 315);
+            this.label5.Location = new System.Drawing.Point(5, 375);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(218, 42);
             this.label5.TabIndex = 10;
@@ -151,16 +155,17 @@ namespace COVID_19.ES
             // 
             // dateTimePicker2
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 349);
+            this.dateTimePicker2.Location = new System.Drawing.Point(5, 418);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(218, 20);
             this.dateTimePicker2.TabIndex = 11;
             this.dateTimePicker2.Visible = false;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // dateTimePicker3
             // 
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(254, 283);
+            this.dateTimePicker3.Location = new System.Drawing.Point(247, 352);
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(96, 20);
             this.dateTimePicker3.TabIndex = 12;
@@ -169,11 +174,12 @@ namespace COVID_19.ES
             // dateTimePicker4
             // 
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker4.Location = new System.Drawing.Point(254, 349);
+            this.dateTimePicker4.Location = new System.Drawing.Point(247, 418);
             this.dateTimePicker4.Name = "dateTimePicker4";
             this.dateTimePicker4.Size = new System.Drawing.Size(96, 20);
             this.dateTimePicker4.TabIndex = 13;
             this.dateTimePicker4.Visible = false;
+            this.dateTimePicker4.ValueChanged += new System.EventHandler(this.dateTimePicker4_ValueChanged);
             // 
             // pictureBox1
             // 
@@ -185,12 +191,30 @@ namespace COVID_19.ES
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
+            // datePickerSystem
+            // 
+            this.datePickerSystem.Location = new System.Drawing.Point(421, 139);
+            this.datePickerSystem.Name = "datePickerSystem";
+            this.datePickerSystem.Size = new System.Drawing.Size(141, 20);
+            this.datePickerSystem.TabIndex = 15;
+            this.datePickerSystem.Visible = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(9, 475);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(552, 62);
+            this.dataGridView1.TabIndex = 16;
+            // 
             // Prechequeo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(581, 470);
+            this.ClientSize = new System.Drawing.Size(574, 543);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.datePickerSystem);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateTimePicker4);
             this.Controls.Add(this.dateTimePicker3);
@@ -210,9 +234,14 @@ namespace COVID_19.ES
             this.ShowIcon = false;
             this.Text = "Prechequeo";
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.DataGridView dataGridView1;
+
+        private System.Windows.Forms.DateTimePicker datePickerSystem;
 
 
         private System.Windows.Forms.PictureBox pictureBox1;
