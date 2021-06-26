@@ -37,7 +37,7 @@ namespace COVID_19.ES.CovidContext
 
             foreach (var varA in Cabinlist)
             {
-                if (IdAppointment1 == varA.Id)
+                if (IdCabin == varA.Id)
                 {
                     this.IdCabinNavigation = varA;
                 }

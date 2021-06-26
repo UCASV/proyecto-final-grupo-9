@@ -21,17 +21,19 @@ namespace COVID_19.ES.CovidContext
             this.Name = Name;
             this.DuiCitizen = DuiCitizen;
             
-            //revisar posible error
             //llenar virtual Citizen
             var db = new Vaccination_ManagementContext();
             List<Citizen> citizenlist = db.Citizens
                 .ToList();
             
-            var dataEntered = citizenlist.Where(
-                U => U.Dui.Equals(DuiCitizen) 
-            ).ToList();
-
-            this.DuiCitizenNavigation = dataEntered.First();
+            foreach (var varA in citizenlist)
+            {
+                if (DuiCitizen == varA.Dui)
+                {
+                    this.DuiCitizenNavigation = varA;
+                }
+            }
+            
         }
     }
 }

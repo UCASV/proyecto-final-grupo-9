@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 #nullable disable
 
@@ -18,6 +19,19 @@ namespace COVID_19.ES.CovidContext
         {
             this.DateHour = DateHour;
             this.DuiAppointment1 = DuiAppointment1;
+            
+            //llenar virtual appointment1
+            var db = new Vaccination_ManagementContext();
+            List<Appointment1> citizenlist = db.Appointment1s
+                .ToList();
+            
+            foreach (var varA in citizenlist)
+            {
+                if (DuiAppointment1 == varA.Id)
+                {
+                    this.DuiAppointment1Navigation = varA;
+                }
+            }
         }
     }
 }
