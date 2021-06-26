@@ -191,7 +191,7 @@ namespace COVID_19.ES
             }*/
             
             //WaitRow1
-            /*if (false)
+            if (true)
             {
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
@@ -199,7 +199,7 @@ namespace COVID_19.ES
                 WaitRow1 one = new WaitRow1(varDateTime, 1);
                 db.Add(one);
                 db.SaveChanges();
-            }*/
+            }
             
             //WaitRow2
             /*if (false)

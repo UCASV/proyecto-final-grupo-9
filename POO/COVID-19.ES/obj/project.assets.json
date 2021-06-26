@@ -5761,30 +5761,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hp user\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\DARWIN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp user\\Desktop\\0.ProyectoFinal\\proyecto-final-grupo-9\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
+      "projectUniqueName": "C:\\Users\\DARWIN\\Desktop\\PROGRAMACION\\1.POO\\1.Proyecto-Entrega\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
       "projectName": "COVID-19.ES",
-      "projectPath": "C:\\Users\\Hp user\\Desktop\\0.ProyectoFinal\\proyecto-final-grupo-9\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
-      "packagesPath": "C:\\Users\\Hp user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp user\\Desktop\\0.ProyectoFinal\\proyecto-final-grupo-9\\POO\\COVID-19.ES\\obj\\",
+      "projectPath": "C:\\Users\\DARWIN\\Desktop\\PROGRAMACION\\1.POO\\1.Proyecto-Entrega\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
+      "packagesPath": "C:\\Users\\DARWIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DARWIN\\Desktop\\PROGRAMACION\\1.POO\\1.Proyecto-Entrega\\POO\\COVID-19.ES\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Hp user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\DARWIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0-windows"
