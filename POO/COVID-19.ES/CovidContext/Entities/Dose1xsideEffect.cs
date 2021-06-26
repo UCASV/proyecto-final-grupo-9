@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 #nullable disable
 
@@ -20,6 +21,30 @@ namespace COVID_19.ES.CovidContext
             this.IdSideEffect = IdSideEffect;
             this.IdDose1 = IdDose1;
             this.Time = Time;
+            
+            //comparar virtual Dose1
+            var db = new Vaccination_ManagementContext();
+            List<Dose1> Doselist = db.Dose1s
+                .ToList();
+            
+            foreach (var varA in Doselist)
+            {
+                if (IdDose1 == varA.Id)
+                {
+                    this.IdDose1Navigation = varA;
+                }
+            }
+            //comparar sideEffectlist
+            List<SideEffect> sideEffectlist = db.SideEffects
+                .ToList();
+
+            foreach (var varA in sideEffectlist)
+            {
+                if ( IdSideEffect == varA.Id)
+                {
+                    this.IdSideEffectNavigation = varA;
+                }
+            }
         }
     }
 }

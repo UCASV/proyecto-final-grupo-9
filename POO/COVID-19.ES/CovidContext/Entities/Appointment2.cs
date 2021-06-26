@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 #nullable disable
 
@@ -27,6 +28,19 @@ namespace COVID_19.ES.CovidContext
             this.DateTime = DateTime;
             this.Place = Place;
             this.DuiCitizen = DuiCitizen;
+            
+            //llenar virtual Citizen
+            var db = new Vaccination_ManagementContext();
+            List<Citizen> citizenlist = db.Citizens
+                .ToList();
+            
+            foreach (var varA in citizenlist)
+            {
+                if (DuiCitizen == varA.Dui)
+                {
+                    this.DuiCitizenNavigation = varA;
+                }
+            }
         }
     }
 }
