@@ -33,7 +33,6 @@ namespace COVID_19.ES.CovidContext
                     this.DuiCitizenNavigation = varA;
                 }
             }
-            
         }
     }
 }

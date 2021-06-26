@@ -15,7 +15,7 @@ namespace COVID_19.ES.CovidContext
         public virtual Appointment1 DuiAppointment1Navigation { get; set; }
 
         //extra
-        public WaitRow1(DateTime DateHour, int DuiAppointment1)
+        /*public WaitRow1(DateTime DateHour, int DuiAppointment1)
         {
             this.DateHour = DateHour;
             this.DuiAppointment1 = DuiAppointment1;
@@ -32,6 +32,6 @@ namespace COVID_19.ES.CovidContext
                     this.DuiAppointment1Navigation = varA;
                 }
             }
-        }
+        }*/
     }
 }

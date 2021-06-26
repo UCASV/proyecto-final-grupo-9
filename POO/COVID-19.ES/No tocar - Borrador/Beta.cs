@@ -21,7 +21,7 @@ namespace COVID_19.ES
             if(false){
                 var db = new Vaccination_ManagementContext();
                 List<Manager> managerlist = db.Managers.ToList();
-                Manager one = new Manager(01, "735t1", "micorreo@gmail.com", "bulebar 1", "Jefe", "Rian Carlos");
+                Manager one = new Manager(210, "735t1", "micorreo@gmail.com", "bulebar 1", "Jefe", "Rian Carlos");
                 db.Add(one);
                 db.SaveChanges();
             }
@@ -180,7 +180,7 @@ namespace COVID_19.ES
             
             
             //RegistrationStart 
-            if (false)
+            /*if (false)
             {
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
@@ -188,10 +188,10 @@ namespace COVID_19.ES
                 RegistrationStart one = new RegistrationStart(1,2, varDateTime );
                 db.Add(one);
                 db.SaveChanges();
-            }
+            }*/
             
             //WaitRow1
-            if (false)
+            /*if (false)
             {
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
@@ -199,10 +199,10 @@ namespace COVID_19.ES
                 WaitRow1 one = new WaitRow1(varDateTime, 1);
                 db.Add(one);
                 db.SaveChanges();
-            }
+            }*/
             
             //WaitRow2
-            if (false)
+            /*if (false)
             {
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
@@ -210,7 +210,7 @@ namespace COVID_19.ES
                 WaitRow1 one = new WaitRow1(varDateTime, 1 );
                 db.Add(one);
                 db.SaveChanges();
-            }
+            }*/
             
         }
     }

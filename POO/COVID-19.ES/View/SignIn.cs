@@ -16,17 +16,7 @@ namespace COVID_19.ES
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* var db = new Vaccination_ManagementContext();
-            List<Manager> managerlist = db.Managers.ToList();
-            Manager one = new Manager(Int32.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox2.Text);
-            db.Add(one);
-            db.SaveChanges();*/
-            
-            
-            int number = 0;
-            int.TryParse(textBox1.Text, out number);
-            
-                
+
             if (textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == ""
                 || textBox4.Text == "" || textBox5.Text == "" || textBox6.Text == "")
             {
@@ -34,30 +24,33 @@ namespace COVID_19.ES
             }
             else
             {
-                using (var db = new Vaccination_ManagementContext())
-                {
-                    var Qstn = new List<Manager>()
+                
+                var db = new Vaccination_ManagementContext();
+
+                List<Manager> managerlist = db.Managers.ToList();
+                
+                var dataEntered = managerlist.Where(
+                    U => U.Id.Equals(Int32.Parse(textBox1.Text)) 
+                ).ToList();
+                
+                    if (dataEntered.Count == 0)
                     {
-                        new Manager()
-                        {
-                            Id = number,
-                            Name = textBox2.Text,
-                            Password = textBox3.Text,
-                            InstitutionalMail = textBox4.Text,
-                            HomeDirection = textBox5.Text,
-                            EmployeeType = textBox6.Text
-                        }
-                    };
-                    Qstn.ForEach(qs => db.Add(qs));
-                    db.SaveChanges(); 
-                    MessageBox.Show("Datos introducidos");                    
+                        Manager one = new Manager(Int32.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox2.Text);
+                        db.Add(one);
+                        db.SaveChanges();
+                        MessageBox.Show("Datos introducidos");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ya existe un gestor con ese identificacion.");
+                    }
+                    
                     textBox1.Text = "";
                     textBox2.Text = "";
                     textBox3.Text = "";
                     textBox4.Text = "";
                     textBox5.Text = "";
                     textBox6.Text = "";
-                }
             }
         }
     } 
