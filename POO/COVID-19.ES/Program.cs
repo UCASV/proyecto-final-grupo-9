@@ -17,7 +17,7 @@ namespace COVID_19.ES
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Beta());
+            Application.Run(new AppointmentProcess());
         }
     }
 }

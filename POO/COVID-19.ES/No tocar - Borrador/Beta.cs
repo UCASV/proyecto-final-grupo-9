@@ -98,17 +98,7 @@ namespace COVID_19.ES
                 db.Add(one);
                 db.SaveChanges();
             }
-            
-            //ChronicDisease
-            if (false)
-            {
-                var db = new Vaccination_ManagementContext();
-                List<ChronicDisease> cabinlist = db.ChronicDiseases.ToList();
-                ChronicDisease one = new ChronicDisease("Sifilis", 34);
-                db.Add(one);
-                db.SaveChanges();
-            }
-            
+
             //Institution
             if (false)
             {
