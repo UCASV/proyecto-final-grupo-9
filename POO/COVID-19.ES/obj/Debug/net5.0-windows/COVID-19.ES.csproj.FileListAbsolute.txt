@@ -186,7 +186,6 @@ C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\ob
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.genruntimeconfig.cache
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Beta.resources
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Prechequeo.resources
-C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.ProcesoCita.resources
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.MainMenu.resources
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.SignIn.resources
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.AppointmentProcess.resources

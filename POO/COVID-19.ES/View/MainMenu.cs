@@ -19,16 +19,14 @@ namespace COVID_19.ES
 
         private void DateProces_Click(object sender, EventArgs e)
         {
-            ProcesoCita date = new ProcesoCita();
+            AppointmentProcess date = new AppointmentProcess();
             date.ShowDialog();
-            this.Close();
         }
 
         private void SignIn_Click(object sender, EventArgs e)
         {
             SignIn sign = new SignIn();
             sign.ShowDialog();
-            this.Close();
         }
     }
 }
