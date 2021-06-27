@@ -189,3 +189,4 @@ C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\ob
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.MainMenu.resources
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.SignIn.resources
 C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.AppointmentProcess.resources
+C:\Users\DARWIN\Desktop\PROGRAMACION\1.POO\1.Proyecto-Entrega\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.GoAppointment.resources

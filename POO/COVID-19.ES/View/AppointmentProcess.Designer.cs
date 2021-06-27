@@ -93,7 +93,7 @@ namespace COVID_19.ES
             this.tableLayoutPanel1.Controls.Add(this.button2, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBox6, 3, 5);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 100);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 105);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -172,7 +172,7 @@ namespace COVID_19.ES
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(271, 57);
             this.label2.TabIndex = 9;
-            this.label2.Text = "NOMBRE COMPLETO:";
+            this.label2.Text = "NOMBRE:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label3
@@ -277,14 +277,15 @@ namespace COVID_19.ES
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(803, 608);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "AppointmentProcess";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AppointmentProcess";
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

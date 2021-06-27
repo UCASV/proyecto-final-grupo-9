@@ -54,9 +54,10 @@ namespace COVID_19.ES
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label3.Location = new System.Drawing.Point(175, 12);
+            this.label3.Location = new System.Drawing.Point(262, 18);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(394, 127);
+            this.label3.Size = new System.Drawing.Size(591, 195);
             this.label3.TabIndex = 3;
             this.label3.Text = "SEGUIMIENTO DE CITAS DE VACUNAS COVID-19";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -65,9 +66,10 @@ namespace COVID_19.ES
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label1.Location = new System.Drawing.Point(12, 142);
+            this.label1.Location = new System.Drawing.Point(18, 232);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 21);
+            this.label1.Size = new System.Drawing.Size(396, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "DUI";
             // 
@@ -75,26 +77,29 @@ namespace COVID_19.ES
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 182);
+            this.textBox1.Location = new System.Drawing.Point(18, 269);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(264, 26);
+            this.textBox1.Size = new System.Drawing.Size(394, 35);
             this.textBox1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label2.Location = new System.Drawing.Point(12, 211);
+            this.label2.Location = new System.Drawing.Point(18, 325);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 42);
+            this.label2.Size = new System.Drawing.Size(450, 65);
             this.label2.TabIndex = 2;
             this.label2.Text = "¿Otorga su consentimiento para ser vacunado?";
             // 
             // check_No
             // 
             this.check_No.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.check_No.Location = new System.Drawing.Point(12, 282);
+            this.check_No.Location = new System.Drawing.Point(18, 434);
+            this.check_No.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.check_No.Name = "check_No";
-            this.check_No.Size = new System.Drawing.Size(91, 26);
+            this.check_No.Size = new System.Drawing.Size(136, 40);
             this.check_No.TabIndex = 5;
             this.check_No.Text = "No.";
             this.check_No.UseVisualStyleBackColor = true;
@@ -103,9 +108,10 @@ namespace COVID_19.ES
             // check_yes
             // 
             this.check_yes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.check_yes.Location = new System.Drawing.Point(12, 256);
+            this.check_yes.Location = new System.Drawing.Point(18, 394);
+            this.check_yes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.check_yes.Name = "check_yes";
-            this.check_yes.Size = new System.Drawing.Size(91, 20);
+            this.check_yes.Size = new System.Drawing.Size(136, 31);
             this.check_yes.TabIndex = 4;
             this.check_yes.Text = "Si.";
             this.check_yes.UseVisualStyleBackColor = true;
@@ -117,19 +123,21 @@ namespace COVID_19.ES
             this.bttn_Verifydata.BackColor = System.Drawing.Color.Thistle;
             this.bttn_Verifydata.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttn_Verifydata.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.bttn_Verifydata.Location = new System.Drawing.Point(104, 475);
+            this.bttn_Verifydata.Location = new System.Drawing.Point(155, 710);
+            this.bttn_Verifydata.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bttn_Verifydata.Name = "bttn_Verifydata";
-            this.bttn_Verifydata.Size = new System.Drawing.Size(145, 55);
+            this.bttn_Verifydata.Size = new System.Drawing.Size(218, 85);
             this.bttn_Verifydata.TabIndex = 7;
-            this.bttn_Verifydata.Text = "Verificar datos";
+            this.bttn_Verifydata.Text = "Guardar";
             this.bttn_Verifydata.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label4.Location = new System.Drawing.Point(12, 311);
+            this.label4.Location = new System.Drawing.Point(18, 478);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(366, 42);
+            this.label4.Size = new System.Drawing.Size(549, 65);
             this.label4.TabIndex = 8;
             this.label4.Text = "Fecha y hora de entrada a la fila";
             this.label4.Visible = false;
@@ -137,18 +145,21 @@ namespace COVID_19.ES
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 356);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(18, 548);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(264, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(136, 35);
             this.dateTimePicker1.TabIndex = 9;
             this.dateTimePicker1.Visible = false;
             // 
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label5.Location = new System.Drawing.Point(12, 385);
+            this.label5.Location = new System.Drawing.Point(18, 592);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(366, 42);
+            this.label5.Size = new System.Drawing.Size(549, 65);
             this.label5.TabIndex = 10;
             this.label5.Text = "Fecha y hora en la que se aplico la vacuna";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,9 +169,11 @@ namespace COVID_19.ES
             // 
             this.dateTimePicker2.CalendarFont = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.dateTimePicker2.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(12, 430);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(18, 662);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(264, 26);
+            this.dateTimePicker2.Size = new System.Drawing.Size(136, 35);
             this.dateTimePicker2.TabIndex = 11;
             this.dateTimePicker2.Visible = false;
             // 
@@ -168,9 +181,10 @@ namespace COVID_19.ES
             // 
             this.dateTimePicker3.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker3.Location = new System.Drawing.Point(282, 356);
+            this.dateTimePicker3.Location = new System.Drawing.Point(189, 548);
+            this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(96, 26);
+            this.dateTimePicker3.Size = new System.Drawing.Size(109, 35);
             this.dateTimePicker3.TabIndex = 12;
             this.dateTimePicker3.Visible = false;
             // 
@@ -178,18 +192,20 @@ namespace COVID_19.ES
             // 
             this.dateTimePicker4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker4.Location = new System.Drawing.Point(282, 430);
+            this.dateTimePicker4.Location = new System.Drawing.Point(189, 662);
+            this.dateTimePicker4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.Size = new System.Drawing.Size(96, 26);
+            this.dateTimePicker4.Size = new System.Drawing.Size(109, 35);
             this.dateTimePicker4.TabIndex = 13;
             this.dateTimePicker4.Visible = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(18, 18);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(157, 127);
+            this.pictureBox1.Size = new System.Drawing.Size(236, 195);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
@@ -200,9 +216,10 @@ namespace COVID_19.ES
             this.bttnback.BackColor = System.Drawing.Color.Thistle;
             this.bttnback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnback.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.bttnback.Location = new System.Drawing.Point(310, 475);
+            this.bttnback.Location = new System.Drawing.Point(454, 710);
+            this.bttnback.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bttnback.Name = "bttnback";
-            this.bttnback.Size = new System.Drawing.Size(145, 55);
+            this.bttnback.Size = new System.Drawing.Size(218, 85);
             this.bttnback.TabIndex = 15;
             this.bttnback.Text = "Volver";
             this.bttnback.UseVisualStyleBackColor = false;
@@ -210,10 +227,10 @@ namespace COVID_19.ES
             // 
             // Prechequeo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
-            this.ClientSize = new System.Drawing.Size(581, 542);
+            this.ClientSize = new System.Drawing.Size(872, 813);
             this.Controls.Add(this.bttnback);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dateTimePicker4);
@@ -229,6 +246,8 @@ namespace COVID_19.ES
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.check_No);
             this.Controls.Add(this.label2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.Name = "Prechequeo";
             this.ShowIcon = false;
