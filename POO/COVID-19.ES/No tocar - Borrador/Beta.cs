@@ -98,16 +98,7 @@ namespace COVID_19.ES
                 db.Add(one);
                 db.SaveChanges();
             }
-
-            //Institution
-            if (false)
-            {
-                var db = new Vaccination_ManagementContext();
-                List<Institution> cabinlist = db.Institutions.ToList();
-                Institution one = new Institution(1,"POLICIA", 34);
-                db.Add(one);
-                db.SaveChanges();
-            }
+            
             
             //Dose1xsideEffect
             if (false)

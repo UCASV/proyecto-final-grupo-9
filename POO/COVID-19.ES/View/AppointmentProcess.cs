@@ -26,6 +26,7 @@ namespace COVID_19.ES
                 var db = new Vaccination_ManagementContext();
                 List<Citizen> citizenlist = db.Citizens.ToList();
                 List<ChronicDisease> diseaselist = db.ChronicDiseases.ToList();
+                List<Institution> institutionlist = db.Institutions.ToList();
 
                 var dataEntered = citizenlist.Where(
                     U => U.Dui.Equals(Int32.Parse(textBox1.Text))
@@ -46,6 +47,14 @@ namespace COVID_19.ES
                     };
                     db.Add(disease);
                     db.SaveChanges();
+                    Institution institutionA = new Institution( )
+                    {
+                        Id = Int32.Parse(textBox1.Text),
+                        Name = comboBox1.Text,
+                        DuiCitizen = Int32.Parse(textBox1.Text)
+                    };
+                    db.Add(institutionA);
+                    db.SaveChanges();
                     MessageBox.Show("Datos introducidos");
                 }
                 else
@@ -59,6 +68,7 @@ namespace COVID_19.ES
                 textBox4.Text = "";
                 textBox5.Text = "";
                 textBox6.Text = "";
+                comboBox1.Text = "";
             }
         }
     }

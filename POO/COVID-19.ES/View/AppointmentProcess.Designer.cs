@@ -39,7 +39,6 @@ namespace COVID_19.ES
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -49,6 +48,7 @@ namespace COVID_19.ES
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -111,6 +111,7 @@ namespace COVID_19.ES
             // 
             this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {"Educación", "Salud", "PNC", "Gobierno", "Fuerza Armada", "Periodismo", "Cuerpo de socorro", "Aduanas", "Centros Penales"});
             this.comboBox1.Location = new System.Drawing.Point(438, 368);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(271, 28);
@@ -151,15 +152,6 @@ namespace COVID_19.ES
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(271, 31);
             this.textBox4.TabIndex = 4;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.textBox5.Location = new System.Drawing.Point(438, 251);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(271, 31);
-            this.textBox5.TabIndex = 5;
             // 
             // label1
             // 
@@ -260,6 +252,15 @@ namespace COVID_19.ES
             this.button2.Text = "INGRESAR DATOS";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox5
+            // 
+            this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.textBox5.Location = new System.Drawing.Point(438, 251);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(271, 31);
+            this.textBox5.TabIndex = 5;
             // 
             // textBox6
             // 
