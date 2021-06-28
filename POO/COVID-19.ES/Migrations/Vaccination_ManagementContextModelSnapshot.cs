@@ -37,9 +37,9 @@ namespace COVID_19.ES.Migrations
                         .HasColumnName("dui_citizen");
 
                     b.Property<string>("Place")
-                        .HasMaxLength(30)
+                        .HasMaxLength(200)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(30)")
+                        .HasColumnType("varchar(200)")
                         .HasColumnName("place");
 
                     b.HasKey("Id");
@@ -66,9 +66,9 @@ namespace COVID_19.ES.Migrations
                         .HasColumnName("dui_citizen");
 
                     b.Property<string>("Place")
-                        .HasMaxLength(30)
+                        .HasMaxLength(200)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(30)")
+                        .HasColumnType("varchar(200)")
                         .HasColumnName("place");
 
                     b.HasKey("Id");

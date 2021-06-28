@@ -62,7 +62,7 @@ namespace COVID_19.ES.CovidContext
                 entity.Property(e => e.DuiCitizen).HasColumnName("dui_citizen");
 
                 entity.Property(e => e.Place)
-                    .HasMaxLength(30)
+                    .HasMaxLength(200)
                     .IsUnicode(false)
                     .HasColumnName("place");
 
@@ -86,7 +86,7 @@ namespace COVID_19.ES.CovidContext
                 entity.Property(e => e.DuiCitizen).HasColumnName("dui_citizen");
 
                 entity.Property(e => e.Place)
-                    .HasMaxLength(30)
+                    .HasMaxLength(200)
                     .IsUnicode(false)
                     .HasColumnName("place");
 

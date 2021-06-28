@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace COVID_19.ES.Migrations
 {
     [DbContext(typeof(Vaccination_ManagementContext))]
-    [Migration("20210627221833_Init")]
+    [Migration("20210628035457_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -39,9 +39,9 @@ namespace COVID_19.ES.Migrations
                         .HasColumnName("dui_citizen");
 
                     b.Property<string>("Place")
-                        .HasMaxLength(30)
+                        .HasMaxLength(200)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(30)")
+                        .HasColumnType("varchar(200)")
                         .HasColumnName("place");
 
                     b.HasKey("Id");
@@ -68,9 +68,9 @@ namespace COVID_19.ES.Migrations
                         .HasColumnName("dui_citizen");
 
                     b.Property<string>("Place")
-                        .HasMaxLength(30)
+                        .HasMaxLength(200)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(30)")
+                        .HasColumnType("varchar(200)")
                         .HasColumnName("place");
 
                     b.HasKey("Id");
@@ -315,6 +315,9 @@ namespace COVID_19.ES.Migrations
                     b.Property<int>("DuiCitizen")
                         .HasColumnType("int")
                         .HasColumnName("dui_citizen");
+
+                    b.Property<string>("InstID")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasMaxLength(50)

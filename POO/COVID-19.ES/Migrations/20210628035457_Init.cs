@@ -73,7 +73,7 @@ namespace COVID_19.ES.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     date_time = table.Column<DateTime>(type: "datetime", nullable: true),
-                    place = table.Column<string>(type: "varchar(30)", unicode: false, maxLength: 30, nullable: true),
+                    place = table.Column<string>(type: "varchar(200)", unicode: false, maxLength: 200, nullable: true),
                     dui_citizen = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -94,7 +94,7 @@ namespace COVID_19.ES.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     date_time = table.Column<DateTime>(type: "datetime", nullable: true),
-                    place = table.Column<string>(type: "varchar(30)", unicode: false, maxLength: 30, nullable: true),
+                    place = table.Column<string>(type: "varchar(200)", unicode: false, maxLength: 200, nullable: true),
                     dui_citizen = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -175,6 +175,7 @@ namespace COVID_19.ES.Migrations
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     name = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: true),
+                    InstID = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     dui_citizen = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
