@@ -59,12 +59,29 @@ namespace COVID_19.ES
                         db.Add(institutionA);
                         db.SaveChanges();
                         MessageBox.Show("Datos introducidos");
+
+                        dateTimePicker1.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
+                            DateTime.Now.Day, 7, 0, 0);
+                        dateTimePicker1.Value = dateTimePicker1.Value.AddDays(14);
+                        
+                        label12.Text = dateTimePicker1.Value.ToString();
+                        label11.Visible = true;
+                        label12.Visible = true;
+                        
+                        Dose1 dose = new Dose1( )
+                        {
+                            DateTime = dateTimePicker1.Value,
+                            DuiCitizen = Int32.Parse(textBox1.Text)
+                        };
+                        db.Add(dose);
+                        db.SaveChanges();
                     }
                     else
                     {
                         MessageBox.Show("Ya existe un gestor con ese identificacion.");
                     }
 
+                    
                     /*textBox1.Text = "";
                     textBox2.Text = "";
                     textBox3.Text = "";

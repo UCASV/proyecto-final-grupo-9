@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YX6leAWas3+e2EgVl8en8kopXqvfFqcA3jvVfQNz0EbqXshLVjvdhI8xrZYYqcfqiwyqKrzkyCFpAxd6TtsIyg==",
+  "dgSpecHash": "pVEbIV8BRcE3RqKOqEkIGWDWZRzKnBrH/tBWkMxehzptLXxdHMrV2Awiz/qKOBhDJ29CxNdlvzcIC82aY3ah9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\jargu\\Desktop\\New folder (2)\\proyecto-final-grupo-9-master\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
+  "projectFilePath": "C:\\Users\\jargu\\Desktop\\New folder (3)\\proyecto-final-grupo-9\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jargu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jargu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
