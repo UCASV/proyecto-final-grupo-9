@@ -146,6 +146,8 @@ namespace COVID_19.ES
             labelSym.Visible = true;
             labelTime.Visible = true;
             secondAppointment.Location = new Point(186, 355);
+            TimePick.Visible = true;
+            textBSym.Visible = true;
         }
         
         //Generar segunda cita
