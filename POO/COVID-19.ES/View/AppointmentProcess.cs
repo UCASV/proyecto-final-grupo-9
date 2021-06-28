@@ -16,6 +16,9 @@ namespace COVID_19.ES
 
         private void button2_Click(object sender, EventArgs e)
         {
+            var rand = new Random();
+            
+            
             if ((textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == ""
                 || textBox4.Text == "" || textBox5.Text == "" || textBox7.Text == "") ||
                 (textBox6.Text == "" && comboBox2.Text != "") || (textBox8.Text == "" && comboBox1.Text != ""))
@@ -74,17 +77,42 @@ namespace COVID_19.ES
                             MessageBox.Show("Datos introducidos");
 
                             dateTimePicker1.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
-                                    DateTime.Now.Day, 7, 0, 0);
-                            dateTimePicker1.Value = dateTimePicker1.Value.AddDays(14);
+                                    DateTime.Now.Day, rand.Next(7, 10), rand.Next(0, 50), 0);
+                            dateTimePicker1.Value = dateTimePicker1.Value.AddDays(rand.Next(10, 20));
+
+                            int randhospital = rand.Next(1, 5);
+                            string hospital = "";
+                            switch (randhospital)
+                            {
+                                case 1:
+                                    hospital = "Hospital Nacional de la mujer";
+                                    break;
+                                case 2:
+                                    hospital = "Hospital de San Rafael";
+                                    break;
+                                case 3:
+                                    hospital = "Hospital de El Salvador";
+                                    break;
+                                case 4:
+                                    hospital = "Hospital Zacamil ";
+                                    break;
+                                case 5:
+                                    hospital = "Hospital Nacional Rosales";
+                                    break;
+                            }
 
                             label12.Text = dateTimePicker1.Value.ToString();
+                            label14.Text = hospital;
                             label11.Visible = true;
                             label12.Visible = true;
-
+                            label13.Visible = true;
+                            label14.Visible = true;
+                            
+                            
                             Appointment1 appoinment = new Appointment1()
                             {
                                 DateTime = dateTimePicker1.Value,
-                                Place = "Instituto Salvadoreño del Seguro Social",
+                                Place = hospital,
                                 DuiCitizen = Int32.Parse(textBox1.Text)
                                 
                             };
@@ -127,19 +155,43 @@ namespace COVID_19.ES
                             
 
                             MessageBox.Show("Datos introducidos");
-
+                            
                             dateTimePicker1.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
-                                    DateTime.Now.Day, 7, 0, 0);
-                            dateTimePicker1.Value = dateTimePicker1.Value.AddDays(30);
+                                DateTime.Now.Day, rand.Next(7, 10), rand.Next(0, 50), 0);
+                            dateTimePicker1.Value = dateTimePicker1.Value.AddDays(rand.Next(30, 50));
+
+                            int randhospital = rand.Next(1, 5);
+                            string hospital = "";
+                            switch (randhospital)
+                            {
+                                case 1:
+                                    hospital = "Hospital Nacional de la mujer";
+                                    break;
+                                case 2:
+                                    hospital = "Hospital de San Rafael";
+                                    break;
+                                case 3:
+                                    hospital = "Hospital de El Salvador";
+                                    break;
+                                case 4:
+                                    hospital = "Hospital Zacamil ";
+                                    break;
+                                case 5:
+                                    hospital = "Hospital Nacional Rosales";
+                                    break;
+                            }
 
                             label12.Text = dateTimePicker1.Value.ToString();
+                            label14.Text = hospital;
                             label11.Visible = true;
                             label12.Visible = true;
+                            label13.Visible = true;
+                            label14.Visible = true;
 
                             Appointment1 appoinment = new Appointment1()
                             {
                                 DateTime = dateTimePicker1.Value,
-                                Place = "Instituto Salvadoreño del Seguro Social",
+                                Place = hospital,
                                 DuiCitizen = Int32.Parse(textBox1.Text)
                                 
                             };

@@ -34,6 +34,8 @@ namespace COVID_19.ES
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AppointmentProcess));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -91,9 +93,7 @@ namespace COVID_19.ES
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.label5, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label7, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label12, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.label9, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBox4, 1, 3);
@@ -108,6 +108,10 @@ namespace COVID_19.ES
             this.tableLayoutPanel1.Controls.Add(this.comboBox2, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.textBox6, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.textBox5, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label12, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label14, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label13, 2, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 84);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -121,6 +125,30 @@ namespace COVID_19.ES
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1000, 299);
             this.tableLayoutPanel1.TabIndex = 2;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label14.Location = new System.Drawing.Point(714, 250);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(231, 49);
+            this.label14.TabIndex = 28;
+            this.label14.Text = "Unidad";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label14.Visible = false;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label13.Location = new System.Drawing.Point(477, 250);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(231, 49);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Lugar";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label13.Visible = false;
             // 
             // label1
             // 
@@ -185,7 +213,7 @@ namespace COVID_19.ES
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(231, 49);
             this.label12.TabIndex = 26;
-            this.label12.Text = "Fecha de cita";
+            this.label12.Text = "dd/mm/yy";
             this.label12.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.label12.Visible = false;
             // 
@@ -423,6 +451,9 @@ namespace COVID_19.ES
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
 
         private System.Windows.Forms.Label label12;
 
