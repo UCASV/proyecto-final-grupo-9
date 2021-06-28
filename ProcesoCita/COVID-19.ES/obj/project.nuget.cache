@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dRNIIHpR0V5KO6LWlrcrXrQDnv6SwldWVr4e5WwG717H95Z52yA0bzSiIYRqsnTT0LsITcfHDRaJe4711ilT5w==",
+  "dgSpecHash": "Kmv12V2IwZkns7Re+SWUBE68tIC99RDY4SbEOWXDNuCCX2kOGnQyGcXMs/c1QjPNviBBcCPjKYFYnw3RdIWCuw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\DELL E6220\\Downloads\\uca actividades\\Ciclo01 2021\\POO\\Metas\\proyecto\\The_BrianPOO\\proyecto-final-grupo-9\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
+  "projectFilePath": "C:\\Users\\DELL E6220\\Downloads\\uca actividades\\Ciclo01 2021\\POO\\Metas\\proyecto\\POO-Argueta\\proyecto-final-grupo-9\\POO\\COVID-19.ES\\COVID-19.ES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL E6220\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\DELL E6220\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

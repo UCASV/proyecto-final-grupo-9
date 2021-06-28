@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 #nullable disable
 
@@ -12,5 +13,8 @@ namespace COVID_19.ES.CovidContext
         public int DuiAppointment1 { get; set; }
 
         public virtual Appointment1 DuiAppointment1Navigation { get; set; }
+
+        //extra
+        
     }
 }

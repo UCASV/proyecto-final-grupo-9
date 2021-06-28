@@ -18,21 +18,48 @@ namespace COVID_19.ES
             InitializeComponent();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-/* Prueba para saber si la BD esta bien conectada
-//////////////cambiar base de datos a auto incrementable
-var db = new Vaccination_ManagementContext();
-List<Manager> managerlist = db.Managers.ToList();
-Manager one = new Manager(34,"735t1", "micorreo@gmail.com", "bulebar 1", "Jefe", "Rian Carlos");
-db.Add(one);
-db.SaveChanges();
-*/
-        }
-
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
         {
             
+        }
+
+        private void bttnIngresar_Click(object sender, EventArgs e)
+        {
+            if (txtbxPassword.Text == "" || txtbxUser.Text == "")
+            {
+                MessageBox.Show("Introduzca todos los datos");
+            }
+            else
+            {
+                var db = new Vaccination_ManagementContext();
+                var List = db.Managers
+                    .OrderBy(c => c.Id)
+                    .ToList();
+                var resultado = List.Where(
+                    u => u.Id.Equals(Int32.Parse(txtbxUser.Text)) &&
+                         u.Password.Equals(txtbxPassword.Text)).ToList();
+
+                if(resultado.Count == 0)
+                {
+                    MessageBox.Show("El usuario no existe", "Inicio",
+                        MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    MessageBox.Show("Bienvenido", "Inicio",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    MainMenu menu = new MainMenu();
+                    menu.ShowDialog();
+                    this.Close();
+                }
+            }
+           
+        }
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            SignIn sign = new SignIn();
+            sign.ShowDialog();
         }
     }
 }
