@@ -61,6 +61,9 @@ namespace COVID_19.ES
                 DateTime varDateTime = Convert.ToDateTime("2020-01-01 13:30:15");
                 var db = new Vaccination_ManagementContext();
                 List<Appointment1> cabinlist = db.Appointment1s.ToList();
+                Appointment1 one = new Appointment1(varDateTime, "Sonsonate",34);
+                db.Add(one);
+                db.SaveChanges();
             }
             
             ////Appointment2

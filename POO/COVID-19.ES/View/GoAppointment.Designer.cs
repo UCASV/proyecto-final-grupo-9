@@ -43,11 +43,8 @@ namespace COVID_19.ES
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.btncancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,9 +80,6 @@ namespace COVID_19.ES
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker1, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.dateTimePicker2, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.comboBox2, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btncancelar, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.btnGuardar, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.dateTimePicker3, 3, 5);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 109);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 8;
@@ -176,12 +170,11 @@ namespace COVID_19.ES
             // dateTimePicker1
             // 
             this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(428, 77);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(265, 26);
             this.dateTimePicker1.TabIndex = 9;
-            this.dateTimePicker1.Value = new System.DateTime(2021, 6, 27, 16, 58, 0, 0);
             // 
             // dateTimePicker2
             // 
@@ -192,42 +185,6 @@ namespace COVID_19.ES
             this.dateTimePicker2.Size = new System.Drawing.Size(265, 26);
             this.dateTimePicker2.TabIndex = 10;
             // 
-            // comboBox2
-            // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {"SONSONATE", "SANTA ANA", "AHUCHAPAN", "SAN SALVADOR", "MORAZÁN", "SAN VICENTE", "USULUTÁN", "LA LIBERTAD", "LA PAZ", "LA UNIÓN", "CABAÑAS", "SAN MIGUEL", "CHALATENANGO", "CUSCATLAN"});
-            this.comboBox2.Location = new System.Drawing.Point(428, 209);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(265, 28);
-            this.comboBox2.TabIndex = 11;
-            // 
-            // btncancelar
-            // 
-            this.btncancelar.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.btncancelar.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btncancelar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btncancelar.Location = new System.Drawing.Point(80, 363);
-            this.btncancelar.Name = "btncancelar";
-            this.btncancelar.Size = new System.Drawing.Size(265, 54);
-            this.btncancelar.TabIndex = 12;
-            this.btncancelar.Text = "Cancelar";
-            this.btncancelar.UseVisualStyleBackColor = false;
-            this.btncancelar.Click += new System.EventHandler(this.btncancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGuardar.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.btnGuardar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.btnGuardar.Location = new System.Drawing.Point(428, 363);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(265, 54);
-            this.btnGuardar.TabIndex = 13;
-            this.btnGuardar.Text = "Cuardar Cita";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
             // textBox2
             // 
             this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
@@ -236,13 +193,15 @@ namespace COVID_19.ES
             this.textBox2.Size = new System.Drawing.Size(265, 26);
             this.textBox2.TabIndex = 6;
             // 
-            // dateTimePicker3
+            // comboBox2
             // 
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(428, 303);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(217, 26);
-            this.dateTimePicker3.TabIndex = 14;
+            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {"SONSONATE", "SANTA ANA", "AHUCHAPAN", "SAN SALVADOR", "SAN VICENTE", "USULUTAN", "LA LIBERTAD", "LA PAZ", "LA UNIÓN", "CABAÑAS", "SAN MIGUEL"});
+            this.comboBox2.Location = new System.Drawing.Point(428, 209);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(265, 28);
+            this.comboBox2.TabIndex = 11;
             // 
             // GoAppointment
             // 
@@ -262,13 +221,6 @@ namespace COVID_19.ES
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
         }
-
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
-
-        private System.Windows.Forms.Button btncancelar;
-        private System.Windows.Forms.Button btnGuardar;
-
-        private System.Windows.Forms.Button button1;
 
         private System.Windows.Forms.ComboBox comboBox2;
 

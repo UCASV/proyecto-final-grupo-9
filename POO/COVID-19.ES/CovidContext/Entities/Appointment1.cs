@@ -24,12 +24,24 @@ namespace COVID_19.ES.CovidContext
         public virtual ICollection<WaitRow1> WaitRow1s { get; set; }
 
         //func agregada
-        public Appointment1( DateTime DateTime, string Place, int DuiCitizen , Citizen DuiCitizenNavigation)
+        public Appointment1( DateTime DateTime, string Place, int DuiCitizen)
         {
             this.DateTime = DateTime;
             this.Place = Place;
             this.DuiCitizen = DuiCitizen;
-            this.DuiCitizenNavigation = DuiCitizenNavigation;
+            
+            //llenar virtual Citizen
+            var db = new Vaccination_ManagementContext();
+            List<Citizen> citizenlist = db.Citizens
+                .ToList();
+            
+            foreach (var varA in citizenlist)
+            {
+                if (DuiCitizen == varA.Dui)
+                {
+                    this.DuiCitizenNavigation = varA;
+                }
+            }
         }
     }
 }
