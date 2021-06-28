@@ -66,6 +66,7 @@ namespace COVID_19.ES
             this.Close();
         }
         
+        //Busqueda por DUI en el sistema de appointment
         private void bttn_Verifydata_Click(object sender, EventArgs e)
         {
             var db = new Vaccination_ManagementContext();
@@ -77,19 +78,29 @@ namespace COVID_19.ES
             
             for (int i = 0; i < citizenlList.Count; i++)
             {
-                if (Int32.Parse(textBox1.Text) == citizenlList[i].Dui && datePickerSystem.Value == apointDateList[i].DateTime)
+                if (Int32.Parse(textBox1.Text) == citizenlList[i].Dui)
                 {
-                    MessageBox.Show("El usuario esta registrado para vacunacion",
-                        "Verificador");
-                }
-                else if (Int32.Parse(textBox1.Text) == citizenlList[i].Dui && datePickerSystem.Value != apointDateList[i].DateTime)
-                {
-                    MessageBox.Show("El usuario se encuetra registrado pero la fecha no corresponde a su cita",
-                        "Verificador");
+                    if (datePickerSystem.Value == apointDateList[i].DateTime)
+                    {
+                        MessageBox.Show("El usuario esta registrado para vacunacion",
+                            "Verificador");
+                    }
+                    else if(datePickerSystem.Value != apointDateList[i].DateTime)
+                    {
+                        MessageBox.Show("El usuario se encuetra registrado pero la fecha no corresponde a su cita",
+                            "Verificador");
+                        
+                    }
+                    
                 }
                 else
                 {
-                    MessageBox.Show("No esta registrado", "Verificador");
+                    int flag = 0;
+                    flag++;
+                    if (flag == citizenlList.Count)
+                    {
+                        MessageBox.Show("No esta registrado", "Verificador");
+                    }
                 }
             }
             
@@ -114,10 +125,9 @@ namespace COVID_19.ES
 
         }
         
+        //advertencia de mala gestion
         private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
         {
-            var db = new Vaccination_ManagementContext();
-            List<Dose2> doseTwoList = db.Dose2s.ToList();
             
             TimeSpan diferenciaDeHora = dateTimePicker3.Value - dateTimePicker4.Value; 
             if (diferenciaDeHora >= TimeSpan.FromMinutes(30))
@@ -130,26 +140,27 @@ namespace COVID_19.ES
             
         }
 
+        //Aparicion de campos para introducir efectos secundarios
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            
             labelSym.Visible = true;
             labelTime.Visible = true;
             secondAppointment.Location = new Point(186, 355);
-
         }
-
+        
+        //Generar segunda cita
         private void secondAppointment_Click(object sender, EventArgs e)
         {
             var db = new Vaccination_ManagementContext();
             DateTime dateSecondVax = dateTimePicker2.Value.AddDays(50);
-            Appointment2 secondDosage = new Appointment2(dateSecondVax,"La libertad",Int32.Parse(textBox1.Text));
+            Appointment2 secondDosage = new Appointment2(dateSecondVax,"Hospital El Salvador",Int32.Parse(textBox1.Text));
             MessageBox.Show("Segunda dosis dentro de 50 dias, cita registrada para" + dateSecondVax,
                 "Segunda dosis");
             db.Add(secondDosage);
             db.SaveChanges();
         }
-
+        
+        //Envio automatico de sintomas
         private void TimePick_ValueChanged(object sender, EventArgs e)
         {
             var db = new Vaccination_ManagementContext();
