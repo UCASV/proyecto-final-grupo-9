@@ -76,31 +76,30 @@ namespace COVID_19.ES
             List<Citizen> citizenlList = db.Citizens
                 .OrderBy(c => c.Dui).ToList();
             
-            for (int i = 0; i < citizenlList.Count; i++)
+            var DUI = db.Appointment1s.Where(
+                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+            ).ToList();
+            var Ap1 = db.Appointment1s.Where(
+                U => U.DateTime.Value.Date.Equals(datePickerSystem.Value.Date) &&
+                     U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                ).ToList();
+
+            if (DUI.Count == 0)
             {
-                if (Int32.Parse(textBox1.Text) == citizenlList[i].Dui)
+                MessageBox.Show("DUI no agendado");
+                
+            }
+            else
+            {
+                if (Ap1.Count == 0)
                 {
-                    if (datePickerSystem.Value == apointDateList[i].DateTime)
-                    {
-                        MessageBox.Show("El usuario esta registrado para vacunacion",
-                            "Verificador");
-                    }
-                    else if(datePickerSystem.Value != apointDateList[i].DateTime)
-                    {
-                        MessageBox.Show("El usuario se encuetra registrado pero la fecha no corresponde a su cita",
-                            "Verificador");
-                        
-                    }
-                    
+                    MessageBox.Show("El usuario se encuetra registrado pero la fecha no corresponde a su cita",
+                        "Verificador");
                 }
                 else
                 {
-                    int flag = 0;
-                    flag++;
-                    if (flag == citizenlList.Count)
-                    {
-                        MessageBox.Show("No esta registrado", "Verificador");
-                    }
+                    MessageBox.Show("El usuario esta registrado para vacunacion",
+                        "Verificador");
                 }
             }
             
@@ -146,8 +145,6 @@ namespace COVID_19.ES
             labelSym.Visible = true;
             labelTime.Visible = true;
             secondAppointment.Location = new Point(186, 355);
-            TimePick.Visible = true;
-            textBSym.Visible = true;
         }
         
         //Generar segunda cita
@@ -171,6 +168,14 @@ namespace COVID_19.ES
             db.Add(sideEF);
             db.SaveChanges();
         }
-        
+
+        private void Prechequeo_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label1.Text = datePickerSystem.Value.ToString();
+        }
     }
 }

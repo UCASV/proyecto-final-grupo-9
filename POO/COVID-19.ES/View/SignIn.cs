@@ -35,22 +35,26 @@ namespace COVID_19.ES
                 
                     if (dataEntered.Count == 0)
                     {
-                        Manager one = new Manager(Int32.Parse(textBox1.Text), textBox2.Text, textBox4.Text, textBox5.Text, textBox6.Text, textBox2.Text);
+                        Manager one = new Manager(Int32.Parse(textBox1.Text), textBox3.Text,
+                            textBox4.Text, textBox5.Text, textBox6.Text,
+                            textBox2.Text);
                         db.Add(one);
                         db.SaveChanges();
                         MessageBox.Show("Datos introducidos");
+                        
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        textBox4.Text = "";
+                        textBox5.Text = "";
+                        textBox6.Text = "";
                     }
                     else
                     {
                         MessageBox.Show("Ya existe un gestor con ese identificacion.");
                     }
                     
-                    textBox1.Text = "";
-                    textBox2.Text = "";
-                    textBox3.Text = "";
-                    textBox4.Text = "";
-                    textBox5.Text = "";
-                    textBox6.Text = "";
+                    
             }
         }
 

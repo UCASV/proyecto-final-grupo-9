@@ -17,18 +17,15 @@ namespace COVID_19.ES
         private void button2_Click(object sender, EventArgs e)
         {
             var rand = new Random();
-            
-            
             if ((textBox1.Text == "" || textBox2.Text == "" || textBox3.Text == ""
-                || textBox4.Text == "" || textBox5.Text == "" || textBox7.Text == "") ||
+                 || textBox4.Text == "" || textBox5.Text == "" || textBox7.Text == "") ||
                 (textBox6.Text == "" && comboBox2.Text != "") || (textBox8.Text == "" && comboBox1.Text != ""))
             {
                 MessageBox.Show("Introduzca todos los datos");
             }
             else
             {
-                
-                    dateTimePicker1.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
+                dateTimePicker1.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
                         DateTime.Now.Day);
                     if (Int32.Parse(textBox7.Text) >= 60 || comboBox2.Text == "SI" || comboBox1.Text != "")
                     {
@@ -40,8 +37,13 @@ namespace COVID_19.ES
                         var dataEntered = citizenlist.Where(
                             U => U.Dui.Equals(Int32.Parse(textBox1.Text))
                         ).ToList();
+                        
+                        var comprIdInst = institutionlist.Where(
+                            U => U.Name.Equals(comboBox1.Text)
+                                 && U.InstID.Equals(textBox8.Text)
+                        ).ToList();
 
-                        if (dataEntered.Count == 0)
+                        if (dataEntered.Count == 0 && comprIdInst.Count == 0)
                         {
 
                             Citizen one = new Citizen(Int32.Parse(textBox1.Text), textBox2.Text,
@@ -119,19 +121,19 @@ namespace COVID_19.ES
                             db.Add(appoinment);
                             db.SaveChanges();
 
-                            textBox1.Text = "";
-                            textBox2.Text = "";
-                            textBox3.Text = "";
-                            textBox4.Text = "";
-                            textBox5.Text = "";
-                            textBox6.Text = "";
-                            textBox7.Text = "";
-                            textBox8.Text = "";
-                            comboBox1.Text = "";
-                            comboBox2.Text = "";
+                            textBox1.Enabled = false;
+                            textBox2.Enabled = false;
+                            textBox3.Enabled = false;
+                            textBox4.Enabled = false;
+                            textBox5.Enabled = false;
+                            textBox6.Enabled = false;
+                            textBox7.Enabled = false;
+                            textBox8.Enabled = false;
+                            comboBox1.Enabled = false;
+                            comboBox2.Enabled = false;
                         }else
                         {
-                            MessageBox.Show("Ya existe un gestor con ese identificacion.");
+                            MessageBox.Show("Ya existe un gestor con ese identificacion. Compruebe DUI o ID institucional.");
                         }
                             
                     }else
@@ -198,20 +200,21 @@ namespace COVID_19.ES
                             db.Add(appoinment);
                             db.SaveChanges();
 
-                            textBox1.Text = "";
-                            textBox2.Text = "";
-                            textBox3.Text = "";
-                            textBox4.Text = "";
-                            textBox5.Text = "";
-                            textBox6.Text = "";
-                            textBox7.Text = "";
-                            textBox8.Text = "";
-                            comboBox1.Text = "";
-                            comboBox2.Text = "";
+                            textBox1.Enabled = false;
+                            textBox2.Enabled = false;
+                            textBox3.Enabled = false;
+                            textBox4.Enabled = false;
+                            textBox5.Enabled = false;
+                            textBox6.Enabled = false;
+                            textBox7.Enabled = false;
+                            textBox8.Enabled = false;
+                            comboBox1.Enabled = false;
+                            comboBox2.Enabled = false;
                         }else
                         {
                             MessageBox.Show("Ya existe un gestor con ese identificacion.");
                         }
+                        
                         
 
                     }
@@ -260,6 +263,32 @@ namespace COVID_19.ES
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+            textBox8.Text = "";
+            comboBox1.Text = "";
+            comboBox2.Text = "";
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
+            textBox5.Enabled = true;
+            textBox7.Enabled = true;
+            comboBox1.Enabled = true;
+            comboBox2.Enabled = true;
+            label11.Visible = false;
+            label12.Visible = false;
+            label13.Visible = false;
+            label14.Visible = false;
         }
     }
 }
