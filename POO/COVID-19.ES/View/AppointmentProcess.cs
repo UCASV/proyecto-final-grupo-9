@@ -81,12 +81,14 @@ namespace COVID_19.ES
                             label11.Visible = true;
                             label12.Visible = true;
 
-                            Dose1 dose = new Dose1()
+                            Appointment1 appoinment = new Appointment1()
                             {
                                 DateTime = dateTimePicker1.Value,
+                                Place = "Instituto Salvadoreño del Seguro Social",
                                 DuiCitizen = Int32.Parse(textBox1.Text)
+                                
                             };
-                            db.Add(dose);
+                            db.Add(appoinment);
                             db.SaveChanges();
 
                             textBox1.Text = "";
@@ -134,12 +136,14 @@ namespace COVID_19.ES
                             label11.Visible = true;
                             label12.Visible = true;
 
-                            Dose1 dose = new Dose1()
+                            Appointment1 appoinment = new Appointment1()
                             {
                                 DateTime = dateTimePicker1.Value,
+                                Place = "Instituto Salvadoreño del Seguro Social",
                                 DuiCitizen = Int32.Parse(textBox1.Text)
+                                
                             };
-                            db.Add(dose);
+                            db.Add(appoinment);
                             db.SaveChanges();
 
                             textBox1.Text = "";
