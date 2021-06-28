@@ -4,14 +4,16 @@ using COVID_19.ES.CovidContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace COVID_19.ES.Migrations
 {
     [DbContext(typeof(Vaccination_ManagementContext))]
-    partial class Vaccination_ManagementContextModelSnapshot : ModelSnapshot
+    [Migration("20210628015610_migration2")]
+    partial class migration2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

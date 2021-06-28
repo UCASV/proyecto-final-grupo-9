@@ -10,6 +10,7 @@ namespace COVID_19.ES.CovidContext
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public string InstID { get; set; }
         public int DuiCitizen { get; set; }
 
         public virtual Citizen DuiCitizenNavigation { get; set; }

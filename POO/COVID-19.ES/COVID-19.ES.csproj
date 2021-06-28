@@ -21,9 +21,6 @@
         <SubType>Form</SubType>
       </Compile>
       <Compile Remove="Resources\**" />
-      <Compile Update="No tocar - Borrador\Beta.cs">
-        <SubType>Form</SubType>
-      </Compile>
       <Compile Update="View\SignIn.cs">
         <SubType>Form</SubType>
       </Compile>
