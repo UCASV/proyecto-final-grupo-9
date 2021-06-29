@@ -14,7 +14,6 @@ namespace COVID_19.ES.CovidContext
 
         public virtual Appointment1 DuiAppointment1Navigation { get; set; }
 
-        //extra
-        
+        //Constructor
     }
 }

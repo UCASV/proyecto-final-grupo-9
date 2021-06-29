@@ -15,7 +15,7 @@ namespace COVID_19.ES
             datePickerSystem.Value = DateTime.Now;
         }
 
-        public int Count=0;
+        public int Count;
         private void check_yes_CheckedChanged(object sender, EventArgs e)
         {
             //IF PARA QUE NO SE REPITA EL MENSAJE DE CONFIRMACION CUANDO SE RESETEA 
@@ -70,12 +70,6 @@ namespace COVID_19.ES
         private void bttn_Verifydata_Click(object sender, EventArgs e)
         {
             var db = new Vaccination_ManagementContext();
-            List<Appointment1> apointDateList = db.Appointment1s
-                .OrderBy(c => c.Id).ToList();
-            
-            List<Citizen> citizenlList = db.Citizens
-                .OrderBy(c => c.Dui).ToList();
-            
             var DUI = db.Appointment1s.Where(
                 U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
             ).ToList();
@@ -105,29 +99,62 @@ namespace COVID_19.ES
             
         }
         
-        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        //Aparicion de campos para introducir efectos secundarios
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-            var db = new Vaccination_ManagementContext();
-            List<Dose1> DoseOneList = db.Dose1s.ToList();
+            labelSym.Visible = true;
+            labelTime.Visible = true;
+            textBSym.Visible = true;
+            TimePick.Visible = true;
             
-            //para verificar Que el DUI no se repita
-            var dataEntered = DoseOneList.Where(
-                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
-            ).ToList();
-
-            if (dataEntered.Count == 0)
-            {
-                Dose1 firstDosage = new Dose1(dateTimePicker2.Value, Int32.Parse(textBox1.Text));
-                db.Add(firstDosage);     
-                db.SaveChanges();
-            }
-
+            bttn_sendsym.Visible = true;
+            secondAppointment.Location = new Point(362, 361);
         }
         
-        //advertencia de mala gestion
-        private void dateTimePicker4_ValueChanged(object sender, EventArgs e)
+        //Generar segunda cita
+        private void secondAppointment_Click(object sender, EventArgs e)
         {
+            var db = new Vaccination_ManagementContext();
+            DateTime dateSecondVax = dateTimePicker2.Value.AddDays(50);
             
+            //asignacion de diferentes hospitales.
+            var rand = new Random();
+            int randhospital = rand.Next(1, 5);
+            string hospital = "";
+            switch (randhospital)
+            {
+                case 1:
+                    hospital = "Hospital Nacional de la mujer";
+                    break;
+                case 2:
+                    hospital = "Hospital de San Rafael";
+                    break;
+                case 3:
+                    hospital = "Hospital de El Salvador";
+                    break;
+                case 4:
+                    hospital = "Hospital Zacamil ";
+                    break;
+                case 5:
+                    hospital = "Hospital Nacional Rosales";
+                    break;
+            }
+            
+            //intro de datos a Appointment2
+            Appointment2 secondDosage = new Appointment2()
+            {
+                DateTime = dateSecondVax,
+                DuiCitizen = Int32.Parse(textBox1.Text),
+                Place = hospital
+            };
+            MessageBox.Show("Segunda dosis dentro de 50 dias, cita registrada para" + dateSecondVax,
+                "Segunda dosis");
+            db.Add(secondDosage);
+            db.SaveChanges();
+        }
+
+        private void SendSymt_Click(object sender, EventArgs e)
+        {
             TimeSpan diferenciaDeHora = dateTimePicker3.Value - dateTimePicker4.Value; 
             if (diferenciaDeHora >= TimeSpan.FromMinutes(30))
             {
@@ -136,46 +163,45 @@ namespace COVID_19.ES
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
+            else
+            {
+                MessageBox.Show("Tiempo de atencion en rango aceptable", "ADVERTENCIA DE PRODUCTIVIDAD");
+            }
+            //Enviar info a WaitRow1 sobre tiempo de espera
+            var db = new Vaccination_ManagementContext();
+            WaitRow1 waitingTime = new WaitRow1()
+            {
+                DateTime = dateTimePicker2.Value,
+                DuiAppointment1 = Int32.Parse(textBox1.Text)
+            };
+            db.Add(waitingTime);
+            db.SaveChanges();
             
+            //completar info sobre Dose1
+            
+            var db2 = new Vaccination_ManagementContext();
+            Dose1 firstDosage = new Dose1()
+            {
+                DateTime = dateTimePicker2.Value,
+                DuiCitizen = Int32.Parse(textBox1.Text)
+            };
+            //Dose1 firstDosage = new Dose1(dateTimePicker2.Value, Int32.Parse(textBox1.Text));
+            db2.Add(firstDosage);     
+            db2.SaveChanges();
+            MessageBox.Show("Informacion enviada exitosamente", "Primera dosis");
         }
 
-        //Aparicion de campos para introducir efectos secundarios
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            labelSym.Visible = true;
-            labelTime.Visible = true;
-            secondAppointment.Location = new Point(186, 355);
-        }
-        
-        //Generar segunda cita
-        private void secondAppointment_Click(object sender, EventArgs e)
+        private void bttn_sendsym_Click(object sender, EventArgs e)
         {
             var db = new Vaccination_ManagementContext();
-            DateTime dateSecondVax = dateTimePicker2.Value.AddDays(50);
-            Appointment2 secondDosage = new Appointment2(dateSecondVax,"Hospital El Salvador",Int32.Parse(textBox1.Text));
-            MessageBox.Show("Segunda dosis dentro de 50 dias, cita registrada para" + dateSecondVax,
-                "Segunda dosis");
-            db.Add(secondDosage);
-            db.SaveChanges();
-        }
-        
-        //Envio automatico de sintomas
-        private void TimePick_ValueChanged(object sender, EventArgs e)
-        {
-            var db = new Vaccination_ManagementContext();
-            SideEffect sideEF = new SideEffect(textBSym.Text);
-            MessageBox.Show("El informe de sintomas se envio exitosamente", "Envio de informe");
+            SideEffect sideEF = new SideEffect()
+            {
+                Name = textBSym.Text
+            };
             db.Add(sideEF);
             db.SaveChanges();
-        }
-
-        private void Prechequeo_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            label1.Text = datePickerSystem.Value.ToString();
+            MessageBox.Show("El informe de sintomas se envio exitosamente", "Envio de informe");
+        
         }
     }
 }
