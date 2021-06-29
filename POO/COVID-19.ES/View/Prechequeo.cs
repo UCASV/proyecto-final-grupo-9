@@ -160,11 +160,6 @@ namespace COVID_19.ES
                 {
                     dui = AppointList[i].Id;
                 }
-                else
-                {
-                    dui = 0;
-                }
-                
             }
             
             TimeSpan diferenciaDeHora = dateTimePicker3.Value - dateTimePicker4.Value; 
@@ -179,7 +174,7 @@ namespace COVID_19.ES
                 MessageBox.Show("Tiempo de atencion en rango aceptable", "ADVERTENCIA DE PRODUCTIVIDAD");
             }
             //Enviar info a WaitRow1 sobre tiempo de espera
-            /*
+            
             var db = new Vaccination_ManagementContext();
             WaitRow1 waitingTime = new WaitRow1()
             {
@@ -188,7 +183,7 @@ namespace COVID_19.ES
             };
             db.Add(waitingTime);
             db.SaveChanges();
-            */
+            
             
             //completar info sobre Dose1
             
