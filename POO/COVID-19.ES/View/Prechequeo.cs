@@ -117,29 +117,21 @@ namespace COVID_19.ES
             var db = new Vaccination_ManagementContext();
             DateTime dateSecondVax = dateTimePicker2.Value.AddDays(50);
             
-            //asignacion de diferentes hospitales.
-            var rand = new Random();
-            int randhospital = rand.Next(1, 5);
-            string hospital = "";
-            switch (randhospital)
+            //asignacion de hospital segun appointment1.
+            var db2 = new  Vaccination_ManagementContext();
+            var DUI = db2.Appointment1s.Where(
+                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+            ).ToList();
+
+            List<Appointment1> AppointList = db2.Appointment1s.OrderBy(a => a.DuiCitizen).ToList();
+            String hospital = "Hospital Control";
+            for (int i = 0; i < DUI.Count; i++)
             {
-                case 1:
-                    hospital = "Hospital Nacional de la mujer";
-                    break;
-                case 2:
-                    hospital = "Hospital de San Rafael";
-                    break;
-                case 3:
-                    hospital = "Hospital de El Salvador";
-                    break;
-                case 4:
-                    hospital = "Hospital Zacamil ";
-                    break;
-                case 5:
-                    hospital = "Hospital Nacional Rosales";
-                    break;
+                if (Int32.Parse(textBox1.Text) == AppointList[i].DuiCitizen)
+                {
+                    hospital = AppointList[i].Place;
+                }
             }
-            
             //intro de datos a Appointment2
             Appointment2 secondDosage = new Appointment2()
             {
@@ -155,27 +147,48 @@ namespace COVID_19.ES
 
         private void SendSymt_Click(object sender, EventArgs e)
         {
+            var db3 = new  Vaccination_ManagementContext();
+            var DUI = db3.Appointment1s.Where(
+                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+            ).ToList();
+
+            List<Appointment1> AppointList = db3.Appointment1s.OrderBy(a => a.DuiCitizen).ToList();
+            int dui = 0;
+            for (int i = 0; i <= DUI.Count; i++)
+            {
+                if (Int32.Parse(textBox1.Text) == AppointList[i].DuiCitizen)
+                {
+                    dui = AppointList[i].Id;
+                }
+                else
+                {
+                    dui = 0;
+                }
+                
+            }
+            
             TimeSpan diferenciaDeHora = dateTimePicker3.Value - dateTimePicker4.Value; 
             if (diferenciaDeHora >= TimeSpan.FromMinutes(30))
             {
                 MessageBox.Show("EL TIEMPO DE ESPERA SUPERO LA MARCA DE TOLERANCIA DE 30 MINUTOS",
                     "ADVERTENCIA DE PRODUCTIVIDAD",
                     MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
             }
             else
             {
                 MessageBox.Show("Tiempo de atencion en rango aceptable", "ADVERTENCIA DE PRODUCTIVIDAD");
             }
             //Enviar info a WaitRow1 sobre tiempo de espera
+            /*
             var db = new Vaccination_ManagementContext();
             WaitRow1 waitingTime = new WaitRow1()
             {
                 DateTime = dateTimePicker2.Value,
-                DuiAppointment1 = Int32.Parse(textBox1.Text)
+                DuiAppointment1 = dui
             };
             db.Add(waitingTime);
             db.SaveChanges();
+            */
             
             //completar info sobre Dose1
             
@@ -189,6 +202,7 @@ namespace COVID_19.ES
             db2.Add(firstDosage);     
             db2.SaveChanges();
             MessageBox.Show("Informacion enviada exitosamente", "Primera dosis");
+            
         }
 
         private void bttn_sendsym_Click(object sender, EventArgs e)
@@ -201,7 +215,6 @@ namespace COVID_19.ES
             db.Add(sideEF);
             db.SaveChanges();
             MessageBox.Show("El informe de sintomas se envio exitosamente", "Envio de informe");
-        
         }
     }
 }
