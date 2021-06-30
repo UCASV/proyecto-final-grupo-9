@@ -25,7 +25,7 @@ namespace COVID_19.ES
 
         private void bttnIngresar_Click(object sender, EventArgs e)
         {
-            if (txtbxPassword.Text == "" || txtbxUser.Text == "")
+            if (txtbxPassword.Text == "" || txtbxUser.Text == "" || comboBox1.Text == "")
             {
                 MessageBox.Show("Introduzca todos los datos");
             }
@@ -46,6 +46,8 @@ namespace COVID_19.ES
                 }
                 else
                 {
+                    ignore.data = resultado[0].Id;
+                    ignore.dataC = Int32.Parse(comboBox1.Text);
                     MessageBox.Show("Bienvenido", "Inicio",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();

@@ -39,6 +39,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.bttnIngresar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,10 +48,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image) (resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 18);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(693, 137);
+            this.pictureBox1.Size = new System.Drawing.Size(616, 110);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -63,13 +65,13 @@
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtbxUser, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(18, 292);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(16, 234);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(693, 175);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(616, 140);
             this.tableLayoutPanel1.TabIndex = 1;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -77,10 +79,10 @@
             // 
             this.txtbxPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbxPassword.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.txtbxPassword.Location = new System.Drawing.Point(351, 109);
-            this.txtbxPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtbxPassword.Location = new System.Drawing.Point(312, 86);
+            this.txtbxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbxPassword.Name = "txtbxPassword";
-            this.txtbxPassword.Size = new System.Drawing.Size(336, 44);
+            this.txtbxPassword.Size = new System.Drawing.Size(299, 38);
             this.txtbxPassword.TabIndex = 3;
             // 
             // label2
@@ -88,10 +90,10 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(4, 19);
+            this.label2.Location = new System.Drawing.Point(4, 16);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(338, 48);
+            this.label2.Size = new System.Drawing.Size(300, 38);
             this.label2.TabIndex = 0;
             this.label2.Text = "Usuario:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,10 +103,10 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(4, 107);
+            this.label3.Location = new System.Drawing.Point(4, 86);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(338, 48);
+            this.label3.Size = new System.Drawing.Size(300, 38);
             this.label3.TabIndex = 1;
             this.label3.Text = "Contraseña:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,10 +115,10 @@
             // 
             this.txtbxUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtbxUser.Font = new System.Drawing.Font("Arial Narrow", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.txtbxUser.Location = new System.Drawing.Point(356, 21);
-            this.txtbxUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtbxUser.Location = new System.Drawing.Point(317, 16);
+            this.txtbxUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtbxUser.Name = "txtbxUser";
-            this.txtbxUser.Size = new System.Drawing.Size(326, 44);
+            this.txtbxUser.Size = new System.Drawing.Size(290, 38);
             this.txtbxUser.TabIndex = 2;
             // 
             // label1
@@ -125,10 +127,10 @@
             this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(14, 160);
+            this.label1.Location = new System.Drawing.Point(12, 128);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(693, 128);
+            this.label1.Size = new System.Drawing.Size(616, 102);
             this.label1.TabIndex = 2;
             this.label1.Text = "Bienvenido/a \r\nIngrese su Usuario y Contraseña";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -139,10 +141,10 @@
             this.bttnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttnIngresar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.bttnIngresar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bttnIngresar.Location = new System.Drawing.Point(232, 477);
-            this.bttnIngresar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.bttnIngresar.Location = new System.Drawing.Point(20, 382);
+            this.bttnIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bttnIngresar.Name = "bttnIngresar";
-            this.bttnIngresar.Size = new System.Drawing.Size(216, 61);
+            this.bttnIngresar.Size = new System.Drawing.Size(192, 49);
             this.bttnIngresar.TabIndex = 3;
             this.bttnIngresar.Text = "Ingresar";
             this.bttnIngresar.UseVisualStyleBackColor = false;
@@ -154,26 +156,53 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(232, 546);
+            this.button1.Location = new System.Drawing.Point(229, 382);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 72);
+            this.button1.Size = new System.Drawing.Size(192, 49);
             this.button1.TabIndex = 3;
             this.button1.Text = "Crear gestor\r\n";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {"12", "15", "16", "20", "34"});
+            this.comboBox1.Location = new System.Drawing.Point(525, 407);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(107, 24);
+            this.comboBox1.TabIndex = 4;
+            // 
+            // label4
+            // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(525, 378);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(107, 26);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Cabina:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(729, 649);
+            this.ClientSize = new System.Drawing.Size(648, 519);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.bttnIngresar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Text = "Login";
@@ -182,6 +211,9 @@
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label4;
 
         private System.Windows.Forms.Button button1;
 
