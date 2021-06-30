@@ -55,6 +55,7 @@ namespace COVID_19.ES
             this.SendSymt = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.secDose = new System.Windows.Forms.TabPage();
+            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             this.bttn_sendsym = new System.Windows.Forms.Button();
             this.secondAppointment = new System.Windows.Forms.Button();
             this.TimePick = new System.Windows.Forms.DateTimePicker();
@@ -65,7 +66,6 @@ namespace COVID_19.ES
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker5 = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.TabControl.SuspendLayout();
@@ -364,8 +364,16 @@ namespace COVID_19.ES
             this.secDose.Padding = new System.Windows.Forms.Padding(4);
             this.secDose.Size = new System.Drawing.Size(881, 384);
             this.secDose.TabIndex = 2;
-            this.secDose.Text = "Registro segunda dosis";
+            this.secDose.Text = "Efectos secundarios";
             this.secDose.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker5
+            // 
+            this.dateTimePicker5.Location = new System.Drawing.Point(423, 365);
+            this.dateTimePicker5.Name = "dateTimePicker5";
+            this.dateTimePicker5.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker5.TabIndex = 25;
+            this.dateTimePicker5.Visible = false;
             // 
             // bttn_sendsym
             // 
@@ -391,7 +399,6 @@ namespace COVID_19.ES
             this.secondAppointment.Name = "secondAppointment";
             this.secondAppointment.Size = new System.Drawing.Size(233, 49);
             this.secondAppointment.TabIndex = 18;
-            this.secondAppointment.Text = "Generar segunda cita";
             this.secondAppointment.UseVisualStyleBackColor = false;
             this.secondAppointment.Click += new System.EventHandler(this.secondAppointment_Click);
             // 
@@ -452,7 +459,7 @@ namespace COVID_19.ES
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(309, 34);
             this.label10.TabIndex = 23;
-            this.label10.Text = "Presenta efecots secundarios?";
+            this.label10.Text = "Presenta efectos secundarios?";
             // 
             // checkBox2
             // 
@@ -489,15 +496,7 @@ namespace COVID_19.ES
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(566, 71);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Efectos secundarios y segunda cita";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dateTimePicker5
-            // 
-            this.dateTimePicker5.Location = new System.Drawing.Point(423, 365);
-            this.dateTimePicker5.Name = "dateTimePicker5";
-            this.dateTimePicker5.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker5.TabIndex = 25;
             // 
             // Prechequeo
             // 

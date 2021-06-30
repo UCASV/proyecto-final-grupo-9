@@ -17,43 +17,84 @@ namespace COVID_19.ES
 
         public int Count = 0;
         
-        //Busqueda por DUI en el sistema de appointment
+        //Busqua al ciudadano
         private void bttn_Verifydata_Click(object sender, EventArgs e)
         {
-            var db = new Vaccination_ManagementContext();
-            var DUI = db.Appointment1s.Where(
-                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
-            ).ToList();
-            var Ap1 = db.Appointment1s.Where(
-                U => U.DateTime.Value.Date.Equals(datePickerSystem.Value.Date) &&
-                     U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
-            ).ToList();
-
-            if (DUI.Count == 0)
+            if (textBox1.Text == "")
             {
-                MessageBox.Show("DUI no agendado");
+                MessageBox.Show("Introduzca un DUI");
                 
             }
             else
-            {
-                if (Ap1.Count == 0)
+            {   
+                var db = new Vaccination_ManagementContext(); //Busca DUI
+                var DUI = db.Citizens.Where(
+                    U => U.Dui.Equals(Int32.Parse(textBox1.Text))
+                ).ToList();
+            
+                var Ap1 = db.Appointment1s.Where( //Busca la cita 1
+                    U => U.DateTime.Value.Date.Equals(datePickerSystem.Value.Date) &&
+                         U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                ).ToList();
+            
+                var Ap2 = db.Appointment2s.Where( //Busca la cita 2
+                    U => U.DateTime.Value.Date.Equals(datePickerSystem.Value.Date) &&
+                         U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                ).ToList();
+                
+                var Comp = db.Dose1s.Where( //Busca si ya tuvo la segunda dosis
+                    U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                ).ToList();
+                
+                var CompFin = db.Dose2s.Where( //Busca si ya tuvo la segunda dosis
+                    U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                ).ToList();
+                
+                if (DUI.Count == 0) //Comprueba si el DUI esta registrado
                 {
-                    MessageBox.Show("El usuario se encuetra registrado pero la fecha no corresponde a su cita",
-                        "Verificador");
+                    MessageBox.Show("DUI no agendado"); 
+                
                 }
                 else
                 {
-                    MessageBox.Show("El usuario esta registrado para vacunacion",
-                        "Verificador");
-                    bttn_Verifydata.Enabled = false;
-                    check_yes.Enabled = true;
-                    check_No.Enabled = true;
-                    
+                    if (CompFin.Count == 1) //Comprueba si ya tuvo las dos dosis 
+                    {
+                        MessageBox.Show("El ciudadano ya realizo las dos dosis");
+                    }
+                    else if (Ap2.Count == 1) //Comprueba si su proceso esta en la segunda dosis y es su hora
+                    {
+                        MessageBox.Show("El usuario esta registrado para la segunda vacunacion",
+                            "Segunda Dosis");
+                        bttn_Verifydata.Enabled = false;
+                        check_yes.Enabled = true;
+                        check_No.Enabled = true;
+                        textBox1.Enabled = false;
+                    }
+                    else if(Comp.Count == 1)
+                    {
+                        MessageBox.Show("El usuario se encuetra registrado pero la fecha no corresponde a su cita",
+                            "Verificador");
+                    }
+                    else if (Ap1.Count == 1) //Comprueba si su proceso esta en la primera dosis y es su hora
+                    {
+                        MessageBox.Show("El usuario esta registrado para la primera vacunacion",
+                            "Primera Dosis");
+                        bttn_Verifydata.Enabled = false;
+                        check_yes.Enabled = true;
+                        check_No.Enabled = true;
+                        textBox1.Enabled = false;
+                    }
+                    else //Si esta registrado pero aun no es hora
+                    {
+                        MessageBox.Show("El usuario se encuetra registrado pero la fecha no corresponde a su cita",
+                            "Verificador");
+                    }
                 }
             }
             
         }
         
+        //Si da su consentimiento
         private void check_yes_CheckedChanged(object sender, EventArgs e)
         {
             //IF PARA QUE NO SE REPITA EL MENSAJE DE CONFIRMACION CUANDO SE RESETEA 
@@ -74,14 +115,15 @@ namespace COVID_19.ES
                 }
                 else
                 {
-                    ++Count;
+                    ++Count; //Para que no repita el mensaje
                     check_yes.Checked = false;
-                    --Count;
+                    --Count; //Para devolverlo a la normalidad
                 }
             }
 
         }
         
+        //Si no da su consentimiento
         private void check_No_CheckedChanged(object sender, EventArgs e)
         {
             if (Count == 0)
@@ -94,6 +136,33 @@ namespace COVID_19.ES
                 if (ventana == DialogResult.Yes)
                 {
                     MessageBox.Show("La cita sera borrada");
+                    
+                    var db = new Vaccination_ManagementContext(); //Busca DUI
+                    var DUI = db.Citizens.Where(
+                        U => U.Dui.Equals(Int32.Parse(textBox1.Text))
+                    ).ToList();
+            
+                    var Ap1 = db.Appointment1s.Where( //Busca la cita 1
+                        U => U.DateTime.Value.Date.Equals(datePickerSystem.Value.Date) &&
+                             U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                    ).ToList();
+            
+                    var Ap2 = db.Appointment2s.Where( //Busca la cita 2
+                        U => U.DateTime.Value.Date.Equals(datePickerSystem.Value.Date) &&
+                             U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                    ).ToList();
+                    
+                    if (Ap2.Count == 1)
+                    {
+                        db.Remove(Ap2[0]);
+                        db.SaveChanges();
+                    }
+                    else if (Ap1.Count == 1)
+                    {
+                        db.Remove(Ap1[0]);
+                        db.SaveChanges();
+                    }
+                    
                     this.Close();
                 }
                 else
@@ -110,7 +179,11 @@ namespace COVID_19.ES
         {
             var db = new  Vaccination_ManagementContext();
             
-            var DUI = db.Appointment1s.Where(
+            var Ap1 = db.Appointment1s.Where(
+                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+            ).ToList();
+            
+            var Ap2 = db.Appointment2s.Where(
                 U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
             ).ToList();
             
@@ -126,19 +199,40 @@ namespace COVID_19.ES
                 MessageBox.Show("Tiempo de atencion en rango aceptable", "ADVERTENCIA DE PRODUCTIVIDAD");
             }*/
             
-            WaitRow1 waitingTime = new WaitRow1()
+            if (Ap2.Count == 1)
             {
-                DateTime = dateTimePicker3.Value,
-                DuiAppointment1 = DUI[0].Id
-            };
-            db.Add(waitingTime);
-            db.SaveChanges();
+                WaitRow2 waitingTime = new WaitRow2() //Introduce a la fila de espera 2
+                {
+                    DateTime = dateTimePicker3.Value,
+                    DuiAppointment2 = Ap2[0].Id
+                };
+                db.Add(waitingTime);
+                db.SaveChanges();
             
-            dateTimePicker3.Enabled = false;
-            SendSymt.Enabled = false;
-            button1.Enabled = true;
-            dateTimePicker4.Enabled = true;
-            MessageBox.Show("Informacion enviada exitosamente", "Primera dosis");
+                dateTimePicker3.Enabled = false;
+                SendSymt.Enabled = false;
+                button1.Enabled = true;
+                dateTimePicker4.Enabled = true;
+                MessageBox.Show("Informacion enviada exitosamente", "Segunda dosis");
+            }
+            else if (Ap1.Count == 1)
+            {
+                WaitRow1 waitingTime = new WaitRow1() //Introduce a la fila de espera 1
+                {
+                    DateTime = dateTimePicker3.Value,
+                    DuiAppointment1 = Ap1[0].Id
+                };
+                db.Add(waitingTime);
+                db.SaveChanges();
+            
+                dateTimePicker3.Enabled = false;
+                SendSymt.Enabled = false;
+                button1.Enabled = true;
+                dateTimePicker4.Enabled = true;
+                MessageBox.Show("Informacion enviada exitosamente", "Primera dosis");
+            }
+            
+            
         }
         
         // Envia a Dose1
@@ -146,24 +240,51 @@ namespace COVID_19.ES
         {
             var db = new  Vaccination_ManagementContext();
             
-            var DUI = db.Appointment1s.Where(
+            var Ap1 = db.Appointment1s.Where(
                 U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
             ).ToList();
             
-            Dose1 firstDosage = new Dose1()
-            {
-                DateTime = dateTimePicker4.Value,
-                DuiCitizen = DUI[0].DuiCitizen
-            };
-            db.Add(firstDosage);     
-            db.SaveChanges();
-
-            checkBox1.Enabled = true;
-            checkBox2.Enabled = true;
-            button1.Enabled = false;
-            dateTimePicker4.Enabled = false;
+            var Ap2 = db.Appointment2s.Where(
+                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+            ).ToList();
             
-            MessageBox.Show("Informacion enviada exitosamente, continue con el siguiente paso", "Primera dosis");
+            if (Ap2.Count == 1)
+            {
+                Dose2 SecDosage = new Dose2() //Introduce a dosis 2
+                {
+                    DateTime = dateTimePicker4.Value,
+                    DuiCitizen = Ap2[0].DuiCitizen
+                };
+                db.Add(SecDosage);     
+                db.SaveChanges();
+
+                checkBox1.Enabled = true;
+                checkBox2.Enabled = true;
+                button1.Enabled = false;
+                dateTimePicker4.Enabled = false;
+                secondAppointment.Text = "Terminar proceso";
+            
+                MessageBox.Show("Informacion enviada exitosamente. Continue con el siguiente paso", "Segunda dosis");
+            }
+            else if (Ap1.Count == 1)
+            {
+                Dose1 firstDosage = new Dose1() //Introduce a dosis 1
+                {
+                    DateTime = dateTimePicker4.Value,
+                    DuiCitizen = Ap1[0].DuiCitizen
+                };
+                db.Add(firstDosage);     
+                db.SaveChanges();
+
+                checkBox1.Enabled = true;
+                checkBox2.Enabled = true;
+                button1.Enabled = false;
+                dateTimePicker4.Enabled = false;
+                secondAppointment.Text = "Registrar segunda cita";
+                
+                MessageBox.Show("Informacion enviada exitosamente. Continue con el siguiente paso", "Primera dosis");
+            }
+            
         }
         
         //Aparicion de campos para introducir efectos secundarios
@@ -181,8 +302,6 @@ namespace COVID_19.ES
                 
                 secondAppointment.Enabled = false;
             }
-            
-            
         }
         
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
@@ -220,6 +339,12 @@ namespace COVID_19.ES
                 db.Add(sideEF);
                 db.SaveChanges();
                 MessageBox.Show("El informe de sintomas se envio exitosamente", "Envio de informe");
+                secondAppointment.Enabled = true;
+                textBSym.Enabled = false;
+                TimePick.Enabled = false;
+                bttn_sendsym.Enabled = false;
+                checkBox1.Enabled = false;
+                checkBox2.Enabled = false;
             }
             
         }
@@ -230,25 +355,46 @@ namespace COVID_19.ES
             var rand = new Random();
             var db = new Vaccination_ManagementContext();
 
-            dateTimePicker5.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
-                DateTime.Now.Day, rand.Next(7, 10), rand.Next(0, 50), 0);
-            dateTimePicker5.Value = DateTime.Now.AddDays(rand.Next(10, 20));
-            
-            var Cit_Ap = db.Appointment1s.Where(
+            var Ap1 = db.Appointment1s.Where(
                 U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
             ).ToList();
             
-            //intro de datos a Appointment2
-            Appointment2 secondDosage = new Appointment2()
+            var Ap2 = db.Appointment2s.Where(
+                U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+            ).ToList();
+            
+            if (Ap2.Count == 1)
             {
-                DateTime = dateTimePicker5.Value,
-                DuiCitizen = Cit_Ap[0].Id,
-                Place = Cit_Ap[0].Place
-            };
-            db.Add(secondDosage);
-            db.SaveChanges();
+                MessageBox.Show("Ha terminado el proceso de vacunacion");
+            
+                this.Close();
+            }
+            else if (Ap1.Count == 1)
+            {
+                dateTimePicker5.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
+                    DateTime.Now.Day, rand.Next(7, 10), rand.Next(0, 50), 0);
+                dateTimePicker5.Value = DateTime.Now.AddDays(rand.Next(10, 20));
+            
+                var Cit_Ap = db.Appointment1s.Where(
+                    U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
+                ).ToList();
+            
+                //intro de datos a Appointment2
+                Appointment2 secondDosage = new Appointment2()
+                {
+                    DateTime = dateTimePicker5.Value,
+                    DuiCitizen = Cit_Ap[0].DuiCitizen,
+                    Place = Cit_Ap[0].Place
+                };
+                db.Add(secondDosage);
+                db.SaveChanges();
 
-            MessageBox.Show("Datos enviados");
+                MessageBox.Show($"Fecha: {dateTimePicker5.Value}       Lugar: {Cit_Ap[0].Place}"
+                    ,"Segunda cita programada");
+            
+                this.Close();
+            }
+
         }
         
         private void label1_Click(object sender, EventArgs e)
