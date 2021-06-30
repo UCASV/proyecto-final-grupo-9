@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace COVID_19.ES.Migrations
 {
     [DbContext(typeof(Vaccination_ManagementContext))]
-    [Migration("20210629020552_init")]
-    partial class init
+    [Migration("20210629215212_Init")]
+    partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
