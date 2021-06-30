@@ -4,15 +4,24 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using COVID_19.ES.CovidContext;
+using System.Data;
+using System.IO;
+using Microsoft.Data.SqlClient;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using Font = iTextSharp.text.Font;
+
 
 namespace COVID_19.ES
 {
     public partial class Prechequeo : Form
     {
+        SqlConnection connect = new SqlConnection("Server=DESKTOP-J4TCMI2;Database=Vaccination_ManagementV3;Trusted_Connection=True");
         public Prechequeo()
         {
             InitializeComponent();
             datePickerSystem.Value = DateTime.Now;
+            
         }
 
         public int Count = 0;
@@ -402,7 +411,93 @@ namespace COVID_19.ES
 
         }
 
+        // Configuración para mostrar el Datagridview
+        private void Prechequeo_Load(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("SELECT * FROM CITIZEN;",connect);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            DGVData.DataSource = table;
+        }
 
-        
+        private void bttnExport_Click(object sender, EventArgs e)
+        {
+            if (DGVData.Rows.Count > 0) {  
+                 SaveFileDialog sfd = new SaveFileDialog();  
+                 sfd.Filter = "PDF (.pdf)|.pdf";  
+                 sfd.FileName = "Data.pdf";  
+                 bool fileError = false;  
+                 if (sfd.ShowDialog() == DialogResult.OK)  
+                 {  
+                     if (File.Exists(sfd.FileName))  
+                     {  
+                         try  
+                         {  
+                             File.Delete(sfd.FileName);  
+                         }  
+                         catch (IOException ex)  
+                         {  
+                             fileError = true;  
+                             MessageBox.Show("No fue posible escribir los datos en el disco." + ex.Message);  
+                         }  
+                     }  
+                     if (!fileError)  
+                     {  
+                         try  
+                         {
+                             PdfPTable pdfTable = new PdfPTable(DGVData.Columns.Count);  
+                             pdfTable.DefaultCell.Padding = 3;  
+                             pdfTable.WidthPercentage = 100;  
+                             pdfTable.HorizontalAlignment = Element.ALIGN_LEFT;  
+  
+                             foreach (DataGridViewColumn column in DGVData.Columns)  
+                             {  
+                                 PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));  
+                                 pdfTable.AddCell(cell);  
+                             }  
+  
+                             foreach (DataGridViewRow row in DGVData.Rows)  
+                             {  
+                                 foreach (DataGridViewCell cell in row.Cells)  
+                                 {  
+                                     if (cell.Value != null)
+                                     {
+                                         pdfTable.AddCell(cell.Value.ToString());
+                                     } 
+                                 }  
+                             }  
+  
+                             using (FileStream stream = new FileStream(sfd.FileName, FileMode.Create))  
+                             {  
+                                 Document pdfDoc = new Document(PageSize.A4, 10f, 20f, 20f, 10f);  
+                                 PdfWriter.GetInstance(pdfDoc, stream);  
+                                 pdfDoc.Open();  
+                                 Paragraph title;
+                                 Font titleFont = FontFactory.GetFont("Arial", 32);
+                                 title = new Paragraph("Datos recolectados", titleFont );
+                                 title.Alignment = Element.ALIGN_CENTER;
+                                 pdfDoc.Add(title);
+                                 pdfDoc.Add(new Chunk("\n"));
+                                 pdfDoc.Add(pdfTable);  
+                                 pdfDoc.Close();  
+                                 stream.Close();  
+                             }  
+  
+                             MessageBox.Show("Datos exportados con exito!", "Covid-19 - Exportando datos",MessageBoxButtons.OK,MessageBoxIcon.Information);  
+                         }  
+                         catch (Exception ex)  
+                         {  
+                             MessageBox.Show("Error :" + ex.Message);  
+                         }  
+                     }  
+                 }  
+             }  
+             else  
+             {  
+                 MessageBox.Show("No hay nada para exportar!", "Info");  
+             }
+        }
     }
 }
