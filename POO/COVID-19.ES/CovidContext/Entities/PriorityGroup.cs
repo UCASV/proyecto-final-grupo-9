@@ -16,23 +16,5 @@ namespace COVID_19.ES.CovidContext
         
         //extra
         
-        public PriorityGroup(string Name, int DuiCitizen)
-        {
-            this.Name = Name;
-            this.DuiCitizen = DuiCitizen;
-            
-            //llenar virtual Citizen
-            var db = new Vaccination_ManagementContext();
-            List<Citizen> citizenlist = db.Citizens
-                .ToList();
-            
-            foreach (var varA in citizenlist)
-            {
-                if (DuiCitizen == varA.Dui)
-                {
-                    this.DuiCitizenNavigation = varA;
-                }
-            }
-        }
     }
 }

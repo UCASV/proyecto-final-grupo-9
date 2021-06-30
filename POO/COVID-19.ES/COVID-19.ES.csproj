@@ -30,9 +30,6 @@
       <Compile Update="View\AppointmentProcess.cs">
         <SubType>Form</SubType>
       </Compile>
-      <Compile Update="View\GoAppointment.cs">
-        <SubType>Form</SubType>
-      </Compile>
     </ItemGroup>
 
     <ItemGroup>
