@@ -1,6 +1,26 @@
 # Proyecto_BD-POO_Grupo_9
 
- # Documentacion oficial
+### Tabla de Contenido:
+<!--
+
+Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
+
+1. $ npm i -g markedpp
+2. $ markedpp --github -o README.md README.md
+
+-->
+
+<!-- !toc (minlevel=2 omit="Table of Contents") -->
+* [Proceso de cita](Documentacion)
+* [Proceso de cita](#Proceso-de-cita)
+    * [Ingresar datos al formulario](#Ingresar-los-siguientes-datos-en-el-formulario).
+* [Protocolo del dia efectivo](#Protocolo-del-dia-efectivo)
+    * [Prechequeo](#Prechequeo)
+    * [Proceso de vacunacion](#Proceso-de-vacunacion)
+<!-- toc! -->
+
+
+ # Documentacion oficial <a name = "Documentacion"></a>
  -------------------------------------
   ## Aspectos tecnicos
 | Sistema operativo: | Windows 10 |
@@ -15,8 +35,9 @@
 | Microsoft.EntityFrameworkCore.SqlServer | 5.0.7 |
 | Microsoft.EntityFrameworkCore.Design | 5.0.7 |
 
-#Diseño:
-> NOmbre del patron y clasificacion: Pipeline
+# Diseño de Software
+---------
+> Nombre del patron y clasificacion: Pipeline
 ##Intento:
 > Procesa un dato en una serie de etapas, teniendo un aporte de una entrada inicial para luego almacenarla y realizar procesos con esta en las siguientes etapas.
 ## Explicacion: 
@@ -33,6 +54,29 @@
  * [Cadena de responsabilidad](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)
  * [Active Object](https://en.wikipedia.org/wiki/Active_object)
 
-## Manual de Usuario
+# Manual de Usuario
+## Creacion de un nuevo manager
+* En dado caso no se tengan credenciales para ingresar al programa, es necesario crear un nuevo perfil de manager e
+![alt text](blob:https://web.whatsapp.com/63cf61d9-a42d-4381-8b42-e585ee075abf)
+## Proceso de cita <a name="Proceso-de-cita"></a> 
+* Ingresar los siguientes datos en el formulario: <a name="Ingresar-los-siguientes-datos-en-el-formulario"></a>
+    * DUI.
+    * Nombre.
+    * Direccion.
+    * Domicilio actual.
+    * Telefono de contacto (puede ser celular o fijo).
+    * (Opcional) Correo electronico.
+* Ingresar lista de enfermedades cronicas que padece.
+* (Opcional) Ingresar si pertenece a institucion esencial.
+
+## Protocolo del dia efectivo <a name="Protocolo-del-dia-efectivo"></a>
+* Prechequeo: <a name="Prechequeo"></a>
+    * Seleccionar "Seguimiento de citas".
+    * Ingreso de identificacion. 
+    * Ingresar el DUI para verificacion de datos. 
+* Proceso de vacunacion: <a name="Proceso-de-vacunacion"></a>
+    * Registrar fecha y hora.
+    * Esperar a que se genere la fecha de 
+    la cita para segunda dosis.
 
  
