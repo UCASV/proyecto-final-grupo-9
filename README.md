@@ -55,9 +55,23 @@ Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
  * [Active Object](https://en.wikipedia.org/wiki/Active_object)
 
 # Manual de Usuario
-## Creacion de un nuevo manager
-* En dado caso no se tengan credenciales para ingresar al programa, es necesario crear un nuevo perfil de manager e
-![alt text](blob:https://web.whatsapp.com/63cf61d9-a42d-4381-8b42-e585ee075abf)
+## Creacion de un nuevo manager <a name= "Manager"></a>
+* En dado caso no se tengan credenciales para ingresar al programa, es necesario crear un nuevo perfil de manager, presionando el boton de crear manager en la primera pestaña.
+
+![alt text](.\imagenes\img1.jpg)
+y luego ingresando los datos correspondientes en el SignIn
+
+![alt text](.\imagenes\img2.jpg)
+
+## Ingresando credenciales al programa <a name="Log"></a>
+* Usando las credenciales ingresadas luego de crear un nuevo manager, se debe ingresar el Id en la pestaña de Usuario y debe ingresar la contraseña.
+
+![alt text](.\imagenes\img1.jpg)
+Luego presione el boton de ingresar en donde le se mostrara el mensaje de bienvenida y posteriormente se abrira el menuprincipal automaticamente.
+
+![alt text](.\imagenes\img3.jpg)
+![alt text](.\imagenes\img4.jpg)
+
 ## Proceso de cita <a name="Proceso-de-cita"></a> 
 * Ingresar los siguientes datos en el formulario: <a name="Ingresar-los-siguientes-datos-en-el-formulario"></a>
     * DUI.
@@ -66,17 +80,29 @@ Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
     * Domicilio actual.
     * Telefono de contacto (puede ser celular o fijo).
     * (Opcional) Correo electronico.
-* Ingresar lista de enfermedades cronicas que padece.
 * (Opcional) Ingresar si pertenece a institucion esencial.
+
+![alt text](.\imagenes\img5.jpg)
+Luego de la digitacion de los datos se debe de hacer click al boton de "Ingresar datos" y moverse presionando los botones del menu superior con las opciones de "Prechequeo", "paso de vacunacion" y "Efectos secundarios"
 
 ## Protocolo del dia efectivo <a name="Protocolo-del-dia-efectivo"></a>
 * Prechequeo: <a name="Prechequeo"></a>
     * Seleccionar "Seguimiento de citas".
     * Ingreso de identificacion. 
-    * Ingresar el DUI para verificacion de datos. 
+    * Ingresar el DUI para verificacion de datos.
+    * Se necesita que el gestor le pida consentimiento al paciente sobre la vacunacion.
+
+    ![alt text](.\imagenes\img6.jpg)
+ 
 * Proceso de vacunacion: <a name="Proceso-de-vacunacion"></a>
-    * Registrar fecha y hora.
+    * Registrar fecha y hora para el monitoreo de servicio.
+    * Presionar boton para generar segunda cita
     * Esperar a que se genere la fecha de 
     la cita para segunda dosis.
+
+* ![alt text](.\imagenes\img7.jpg)
+Si se presentan sintomas secundarios se necesita seleccionar la opcion correspondiente y posteriormente llenar el formulario con los sintomas presentados
+![alt text](.\imagenes\img8.jpg)
+
 
  
