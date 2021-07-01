@@ -61,10 +61,10 @@ Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
 ## Creacion de un nuevo manager <a name= "Manager"></a>
 * En dado caso no se tengan credenciales para ingresar al programa, es necesario crear un nuevo perfil de manager, presionando el boton de crear manager en la primera pestaña.
 
-![alt text](.\imagenes\img1.jpg)
+![alt text](![image](https://user-images.githubusercontent.com/62674763/124047074-91f35380-d9d0-11eb-96d0-134c443975a8.png))
 y luego ingresando los datos correspondientes en el SignIn
 
-![alt text](.\imagenes\img2.jpg)
+![alt text](https://github.com/UCASV/proyecto-final-grupo-9/blob/program/imagenes/img2.jpg?raw=true)
 
 ## Ingresando credenciales al programa <a name="Log"></a>
 * Usando las credenciales ingresadas luego de crear un nuevo manager, se debe ingresar el Id en la pestaña de Usuario y debe ingresar la contraseña.
