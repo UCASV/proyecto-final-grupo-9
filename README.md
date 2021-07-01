@@ -11,11 +11,11 @@ Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
 -->
 
 <!-- !toc (minlevel=2 omit="Table of Contents") -->
-* [Documentacion Oficial](Documentacion)
-* [Diseño de software](Diseño)
-* [Manual de Usuario](Manager)
-   * [Creacion de nuevo Manager](Manager)
-   * [Ingresando al programa](Log)
+* [Documentacion Oficial](#Documentacion)
+* [Diseño de software](#Diseño)
+* [Manual de Usuario](#Manager)
+   * [Creacion de nuevo Manager](#Manager)
+   * [Ingresando al programa](#Log)
    * [Proceso de cita](#Proceso-de-cita)
    * [Ingresar datos al formulario](#Ingresar-los-siguientes-datos-en-el-formulario).
 * [Protocolo del dia efectivo](#Protocolo-del-dia-efectivo)
