@@ -11,7 +11,10 @@ Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
 -->
 
 <!-- !toc (minlevel=2 omit="Table of Contents") -->
-* [Proceso de cita](Documentacion)
+* [Documentacion Oficial](Documentacion)
+* [Diseño de software](Diseño)
+* [Creacion de nuevo Manager](Manager)
+* [Ingresando al programa](Log)
 * [Proceso de cita](#Proceso-de-cita)
     * [Ingresar datos al formulario](#Ingresar-los-siguientes-datos-en-el-formulario).
 * [Protocolo del dia efectivo](#Protocolo-del-dia-efectivo)
@@ -35,7 +38,7 @@ Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
 | Microsoft.EntityFrameworkCore.SqlServer | 5.0.7 |
 | Microsoft.EntityFrameworkCore.Design | 5.0.7 |
 
-# Diseño de Software
+# Diseño de Software <a name = "Diseño"></a>
 ---------
 > Nombre del patron y clasificacion: Pipeline
 ##Intento:
