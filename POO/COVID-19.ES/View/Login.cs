@@ -52,9 +52,12 @@ namespace COVID_19.ES
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Hide();
                     MainMenu menu = new MainMenu();
+
                     menu.ShowDialog();
                     this.Close();
                 }
+                
+                
             }
            
         }

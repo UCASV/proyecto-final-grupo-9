@@ -168,7 +168,6 @@ namespace COVID_19.ES
                         db.Remove(Ap1[0]);
                         db.SaveChanges();
                     }
-                    
                     this.Close();
                 }
                 else
@@ -374,8 +373,7 @@ namespace COVID_19.ES
             if (Ap2.Count == 1)
             {
                 MessageBox.Show("Ha terminado el proceso de vacunacion");
-                MainMenu date = new MainMenu();
-                date.ShowDialog();
+                
                 this.Close();
             }
             else if (Ap1.Count == 1)
@@ -400,8 +398,7 @@ namespace COVID_19.ES
 
                 MessageBox.Show($"Fecha: {dateTimePicker5.Value}       Lugar: {Cit_Ap[0].Place}"
                     ,"Segunda cita programada");
-                MainMenu date = new MainMenu();
-                date.ShowDialog();
+                
                 this.Close();
             }
 

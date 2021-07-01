@@ -10,7 +10,7 @@ namespace COVID_19.ES
         public MainMenu()
         {
             InitializeComponent();
-            /*int x = ignore.data;
+            int x = ignore.data;
             
             var db = new Vaccination_ManagementContext(); //Busca ID
             var ID = db.Managers.Where(
@@ -22,7 +22,7 @@ namespace COVID_19.ES
             label9.Text = ID[0].InstitutionalMail;
             label10.Text = ID[0].HomeDirection;
             label13.Text = ID[0].EmployeeType;
-            label15.Text = ignore.dataC.ToString();*/
+            label15.Text = ignore.dataC.ToString();
 
         }
 
