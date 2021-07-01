@@ -61,7 +61,7 @@ Generated with [markedpp](#markedpp). Get [nodejs](https://nodejs.org) first
 ## Creacion de un nuevo manager <a name= "Manager"></a>
 * En dado caso no se tengan credenciales para ingresar al programa, es necesario crear un nuevo perfil de manager, presionando el boton de crear manager en la primera pestaña.
 
-![alt text](![image](https://user-images.githubusercontent.com/62674763/124047074-91f35380-d9d0-11eb-96d0-134c443975a8.png))
+![alt text](https://github.com/UCASV/proyecto-final-grupo-9/blob/program/imagenes/img1.jpg?raw=true)
 y luego ingresando los datos correspondientes en el SignIn
 
 ![alt text](https://github.com/UCASV/proyecto-final-grupo-9/blob/program/imagenes/img2.jpg?raw=true)
@@ -69,11 +69,11 @@ y luego ingresando los datos correspondientes en el SignIn
 ## Ingresando credenciales al programa <a name="Log"></a>
 * Usando las credenciales ingresadas luego de crear un nuevo manager, se debe ingresar el Id en la pestaña de Usuario y debe ingresar la contraseña.
 
-![alt text](.\imagenes\img1.jpg)
+![alt text](https://github.com/UCASV/proyecto-final-grupo-9/blob/program/imagenes/img1.jpg?raw=true)
 Luego presione el boton de ingresar en donde le se mostrara el mensaje de bienvenida y posteriormente se abrira el menuprincipal automaticamente.
 
-![alt text](.\imagenes\img3.jpg)
-![alt text](.\imagenes\img4.jpg)
+![alt text](https://raw.githubusercontent.com/UCASV/proyecto-final-grupo-9/program/imagenes/img3.jpg)
+![alt text](https://raw.githubusercontent.com/UCASV/proyecto-final-grupo-9/program/imagenes/img4.jpg)
 
 ## Proceso de cita <a name="Proceso-de-cita"></a> 
 * Ingresar los siguientes datos en el formulario: <a name="Ingresar-los-siguientes-datos-en-el-formulario"></a>
@@ -85,7 +85,7 @@ Luego presione el boton de ingresar en donde le se mostrara el mensaje de bienve
     * (Opcional) Correo electronico.
 * (Opcional) Ingresar si pertenece a institucion esencial.
 
-![alt text](.\imagenes\img5.jpg)
+![alt text](https://raw.githubusercontent.com/UCASV/proyecto-final-grupo-9/program/imagenes/img5.jpg)
 Luego de la digitacion de los datos se debe de hacer click al boton de "Ingresar datos" y moverse presionando los botones del menu superior con las opciones de "Prechequeo", "paso de vacunacion" y "Efectos secundarios"
 
 ## Protocolo del dia efectivo <a name="Protocolo-del-dia-efectivo"></a>
@@ -95,7 +95,7 @@ Luego de la digitacion de los datos se debe de hacer click al boton de "Ingresar
     * Ingresar el DUI para verificacion de datos.
     * Se necesita que el gestor le pida consentimiento al paciente sobre la vacunacion.
 
-    ![alt text](.\imagenes\img6.jpg)
+    ![alt text](https://raw.githubusercontent.com/UCASV/proyecto-final-grupo-9/program/imagenes/img6.jpg)
  
 * Proceso de vacunacion: <a name="Proceso-de-vacunacion"></a>
     * Registrar fecha y hora para el monitoreo de servicio.
@@ -103,9 +103,9 @@ Luego de la digitacion de los datos se debe de hacer click al boton de "Ingresar
     * Esperar a que se genere la fecha de 
     la cita para segunda dosis.
 
-* ![alt text](.\imagenes\img7.jpg)
+* ![alt text](https://raw.githubusercontent.com/UCASV/proyecto-final-grupo-9/program/imagenes/img7.jpg)
 Si se presentan sintomas secundarios se necesita seleccionar la opcion correspondiente y posteriormente llenar el formulario con los sintomas presentados
-![alt text](.\imagenes\img8.jpg)
+![alt text](https://raw.githubusercontent.com/UCASV/proyecto-final-grupo-9/program/imagenes/img8.jpg)
 
 
  
