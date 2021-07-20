@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using COVID_19.ES.CovidContext;
@@ -11,7 +10,6 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Font = iTextSharp.text.Font;
 
-
 namespace COVID_19.ES
 {
     public partial class Prechequeo : Form
@@ -21,7 +19,6 @@ namespace COVID_19.ES
         {
             InitializeComponent();
             datePickerSystem.Value = DateTime.Now;
-            
         }
 
         public int Count = 0;
@@ -341,12 +338,14 @@ namespace COVID_19.ES
             else
             {
                 var db = new Vaccination_ManagementContext();
+                
                 SideEffect sideEF = new SideEffect()
                 {
                     Name = textBSym.Text
                 };
                 db.Add(sideEF);
                 db.SaveChanges();
+                
                 MessageBox.Show("El informe de sintomas se envio exitosamente", "Envio de informe");
                 secondAppointment.Enabled = true;
                 textBSym.Enabled = false;
@@ -375,14 +374,15 @@ namespace COVID_19.ES
             if (Ap2.Count == 1)
             {
                 MessageBox.Show("Ha terminado el proceso de vacunacion");
-            
+                MainMenu date = new MainMenu();
+                date.ShowDialog();
                 this.Close();
             }
             else if (Ap1.Count == 1)
             {
                 dateTimePicker5.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month,
                     DateTime.Now.Day, rand.Next(7, 10), rand.Next(0, 50), 0);
-                dateTimePicker5.Value = DateTime.Now.AddDays(rand.Next(10, 20));
+                dateTimePicker5.Value = DateTime.Now.AddDays(rand.Next(42, 56));
             
                 var Cit_Ap = db.Appointment1s.Where(
                     U => U.DuiCitizen.Equals(Int32.Parse(textBox1.Text))
@@ -400,7 +400,8 @@ namespace COVID_19.ES
 
                 MessageBox.Show($"Fecha: {dateTimePicker5.Value}       Lugar: {Cit_Ap[0].Place}"
                     ,"Segunda cita programada");
-            
+                MainMenu date = new MainMenu();
+                date.ShowDialog();
                 this.Close();
             }
 
@@ -411,16 +412,6 @@ namespace COVID_19.ES
 
         }
 
-        // Configuración para mostrar el Datagridview
-        private void Prechequeo_Load(object sender, EventArgs e)
-        {
-            SqlCommand command = new SqlCommand("SELECT * FROM CITIZEN;",connect);
-            SqlDataAdapter adapter = new SqlDataAdapter();
-            adapter.SelectCommand = command;
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            DGVData.DataSource = table;
-        }
 
         private void bttnExport_Click(object sender, EventArgs e)
         {
@@ -493,11 +484,21 @@ namespace COVID_19.ES
                          }  
                      }  
                  }  
-             }  
-             else  
-             {  
-                 MessageBox.Show("No hay nada para exportar!", "Info");  
-             }
+            }  
+            else  
+            {  
+                MessageBox.Show("No hay nada para exportar!", "Info");  
+            }
+        }
+
+        private void Prechequeo_Load(object sender, EventArgs e)
+        {
+            SqlCommand command = new SqlCommand("SELECT * FROM CITIZEN;",connect);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            DGVData.DataSource = table;
         }
     }
 }

@@ -602,8 +602,10 @@ C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Windows.Forms.DataVisualization.dll
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csprojAssemblyReference.cache
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.AppointmentProcess.resources
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Charts.resources
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Login.resources
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.MainMenu.resources
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Prechequeo.resources
@@ -618,65 +620,83 @@ C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\ref\COVID-19.ES.dll
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.pdb
 C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.genruntimeconfig.cache
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.exe
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.deps.json
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.runtimeconfig.json
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.runtimeconfig.dev.json
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\ref\COVID-19.ES.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.pdb
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Humanizer.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csprojAssemblyReference.cache
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.AppointmentProcess.resources
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Login.resources
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.MainMenu.resources
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Prechequeo.resources
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.SignIn.resources
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csproj.GenerateResource.cache
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.AssemblyInfoInputs.cache
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.AssemblyInfo.cs
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csproj.CoreCompileInputs.cache
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csproj.CopyComplete
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\ref\COVID-19.ES.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.pdb
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.genruntimeconfig.cache
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
-C:\Users\Hp user\Desktop\0.ProyectoFinal\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\itextsharp.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Data.OleDb.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.exe
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.deps.json
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.runtimeconfig.json
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.runtimeconfig.dev.json
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\ref\COVID-19.ES.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\COVID-19.ES.pdb
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\BouncyCastle.Crypto.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Humanizer.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\itextsharp.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.Identity.Client.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Data.OleDb.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Diagnostics.DiagnosticSource.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Runtime.Caching.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Data.OleDb.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\bin\Debug\net5.0-windows\System.Windows.Forms.DataVisualization.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csprojAssemblyReference.cache
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.AppointmentProcess.resources
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Charts.resources
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Login.resources
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.MainMenu.resources
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.Prechequeo.resources
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID_19.ES.SignIn.resources
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csproj.GenerateResource.cache
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.AssemblyInfoInputs.cache
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.AssemblyInfo.cs
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csproj.CoreCompileInputs.cache
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.csproj.CopyComplete
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\ref\COVID-19.ES.dll
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.pdb
+C:\Users\jargu\Desktop\Master GENERAL - Copy\proyecto-final-grupo-9\POO\COVID-19.ES\obj\Debug\net5.0-windows\COVID-19.ES.genruntimeconfig.cache
